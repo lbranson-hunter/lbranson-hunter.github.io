@@ -1,1 +1,41 @@
-"test" 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Luke's AR Test Zone</head>
+		<style type="text/css">
+			.launcher-button{
+				color:white;
+				background-color:red;
+				padding:20px;
+				margin:20px;
+				font-weight:bold;
+				font-size:2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="launcher-buttons">
+			<div class="launcher-button" onclick="launchGoogleSceneViewerAR(intent://arvr.google.com/scene-viewer/1.0?file=https://globalassets.hunter.com/download/assets/qcc_906.glb/a7edf2fc6c3711eea8d2c6f69c5c173a&utm_source=devtools#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;)">
+				Google
+			</div>
+			<div class="launcher-button">
+				Apple
+			</div>
+		</div>
+		<script type="text/javaScript">
+			function launchIOSQuickLookAR(usdzSrc) {
+			  const anchor = document.createElement('a');
+			  anchor.setAttribute('rel', 'ar');
+			  anchor.appendChild(document.createElement('img'));
+			  anchor.setAttribute('href', usdzSrc);
+			  anchor.click();
+			}
+			
+			function launchGoogleSceneViewerAR(usdzSrc) {
+			  const anchor = document.createElement('a');
+			  anchor.setAttribute('href', usdzSrc);
+			  anchor.click();
+			}
+		</script>
+	</body>
+</html>
