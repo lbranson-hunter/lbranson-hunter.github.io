@@ -10,6 +10,8 @@
 				margin:20px;
 				font-weight:bold;
 				font-size:2em;
+				text-align:center;
+				font-family: 'Courier';
 			}
 		</style>
 	</head>
@@ -18,17 +20,24 @@
 			<div class="launcher-button" onclick="launchGoogleSceneViewerAR()">
 				Google
 			</div>
-			<div class="launcher-button" onclick="">
+			<div class="launcher-button" onclick="launchIOSQuickLookAR()">
 				Apple
+			</div>
+			<div class="launcher-button" onclick="launchARView()">
+				Smart Picker
 			</div>
 		</div>
 		<script type="text/javaScript">
 			var defaultGoogleUrl = "intent://arvr.google.com/scene-viewer/1.0?file=https://globalassets.hunter.com/download/assets/qcc_906.glb/a7edf2fc6c3711eea8d2c6f69c5c173a&utm_source=devtools#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+			var defaultAppleUrl = "https://globalassets.hunter.com/download/assets/qcc_906.glb/a7edf2fc6c3711eea8d2c6f69c5c173a";
 		
 			function launchIOSQuickLookAR(usdzSrc) {
 			  const anchor = document.createElement('a');
 			  anchor.setAttribute('rel', 'ar');
 			  anchor.appendChild(document.createElement('img'));
+			  if(usdzSrc == null){
+				usdzSrc = defaultAppleUrl
+			  }
 			  anchor.setAttribute('href', usdzSrc);
 			  anchor.click();
 			}
@@ -40,6 +49,15 @@
 			  }
 			  anchor.setAttribute('href', usdzSrc);
 			  anchor.click();
+			}
+			
+			function launchARView(usdzSrc){
+				const a = document.createElement("a");
+				if (a.relList.supports("ar")) {
+					launchIOSQuickLookAR(usdzSrc);
+				}else{
+					launchGoogleSceneViewerAR(usdzSrc);
+				}
 			}
 		</script>
 	</body>
