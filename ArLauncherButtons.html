@@ -52,11 +52,15 @@
 			}
 			
 			function launchARView(usdzSrc){
-				const a = document.createElement("a");
-				if (a.relList.supports("ar")) {
-					launchIOSQuickLookAR(usdzSrc);
+				if(navigator.userAgentData.mobile==true){
+					const a = document.createElement("a");
+					if (a.relList.supports("ar")) {
+						launchIOSQuickLookAR(usdzSrc);
+					}else{
+						launchGoogleSceneViewerAR(usdzSrc);
+					}
 				}else{
-					launchGoogleSceneViewerAR(usdzSrc);
+					alert("we don't hava a desktop solution");
 				}
 			}
 		</script>
