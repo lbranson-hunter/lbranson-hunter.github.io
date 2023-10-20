@@ -13,9 +13,14 @@
 				text-align:center;
 				font-family: 'Courier';
 			}
+			
+			.qr-container{
+				display:none;
+			}
 		</style>
 	</head>
 	<body>
+		<script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs@gh-pages/qrcode.min.js"></script>
 		<div class="launcher-buttons">
 			<div class="launcher-button" onclick="launchGoogleSceneViewerAR()">
 				Google
@@ -26,6 +31,10 @@
 			<div class="launcher-button" onclick="launchARView()">
 				Smart Picker
 			</div>
+		</div>
+		<div class="qr-container" id="qr-container">
+			<p>Your Device does not support AR. Please scan this QR code with a mobile device:</p>
+			<div id="qrcode"></div>
 		</div>
 		<script type="text/javaScript">
 			var defaultGoogleUrl = "intent://arvr.google.com/scene-viewer/1.0?file=https://globalassets.hunter.com/download/assets/qcc_906.glb/a7edf2fc6c3711eea8d2c6f69c5c173a&utm_source=devtools#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
@@ -60,8 +69,30 @@
 						launchGoogleSceneViewerAR(usdzSrc);
 					}
 				}else{
-					alert("we don't hava a desktop solution");
+					var urlSegs = window.location.href.split('?');
+					let newUrl;
+					if(window.location.href.includes("autoAR=true")){
+						newUrl = window.location.href;
+					}else if(window.location.href.includes("?")){
+						newUrl = window.location.href + "&autoAR=true";
+					}else{
+						newUrl = window.location.href + "?autoAR=true";
+					}
+					var qrcode = new QRCode("qrcode", {
+						text: newUrl,
+						width: 128,
+						height: 128,
+						colorDark : "#000000",
+						colorLight : "#ffffff",
+						correctLevel : QRCode.CorrectLevel.H
+					});
+					document.getElementById("qr-container").style.display = "block";
 				}
+			}
+			
+			const params = new URLSearchParams(window.location.search);
+			if(params.get("autoAR") == "true"){
+				launchARView();
 			}
 		</script>
 	</body>
