@@ -89,7 +89,7 @@ Example markup:
   --ds2f-hover-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.374);
   --ds2f-hover-color: #FFFFFF;
   --ds2f-hover-border-color: rgba(0,0,0,0);
-  --ds2f-hover-text-color: #6B7280;
+  --ds2f-hover-text-color: #BCC1CC;
   --ds2f-hover-opacity: 1;
   --ds2f-active-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.374);
   --ds2f-active-color: #FFFFFF;
@@ -99,7 +99,7 @@ Example markup:
   --ds2f-focus-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.374);
   --ds2f-focus-color: #FFFFFF;
   --ds2f-focus-border-color: rgba(0,0,0,0);
-  --ds2f-focus-text-color: #525866;
+  --ds2f-focus-text-color: #6B7280;
   --ds2f-focus-opacity: 1;
   --ds2f-disabled-shadow: 0px 0px 6.3px 0px rgba(0,0,0,0.374);
   --ds2f-disabled-color: #FFFFFF;
@@ -113,8 +113,8 @@ Example markup:
   --ds2f-default-border-color: #0D111A;
   --ds2f-default-text-color: #1F2533;
   --ds2f-default-opacity: 1;
-  --ds2f-hover-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
-  --ds2f-hover-color: #FFFFFF;
+  --ds2f-hover-shadow: none;
+  --ds2f-hover-color: #DDE2EB;
   --ds2f-hover-border-color: #6B7280;
   --ds2f-hover-text-color: #6B7280;
   --ds2f-hover-opacity: 1;
@@ -123,8 +123,8 @@ Example markup:
   --ds2f-active-border-color: #0D111A;
   --ds2f-active-text-color: #1F2533;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: none;
-  --ds2f-focus-color: #DDE2EB;
+  --ds2f-focus-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
+  --ds2f-focus-color: #FFFFFF;
   --ds2f-focus-border-color: #6B7280;
   --ds2f-focus-text-color: #6B7280;
   --ds2f-focus-opacity: 1;
