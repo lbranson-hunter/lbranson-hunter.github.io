@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+:root {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "GRAD" 0, "XTRA" 468, "YOPQ" 79, "YTAS" 750, "YTDE" -203, "YTFI" 738, "YTLC" 514, "YTUC" 712;
+}
+
+:root {
+  --ds2v-color-black: #0D111A;
+  --ds2v-color-text: #1F2533;
+  --ds2v-color-white: #FFFFFF;
+  --ds2v-color-primary: #C00C00;
+  --ds2v-color-primary-dark: #A80B00;
+  --ds2v-color-primary-darker: #900900;
+  --ds2v-color-primary-darkest: #780800;
+  --ds2v-color-primary-light: #D86760;
+  --ds2v-color-primary-active: #D30D00;
+  --ds2v-color-neutral: #6B7280;
+  --ds2v-color-neutral-dark: #525866;
+  --ds2v-color-neutral-darker: #373F4D;
+  --ds2v-color-neutral-light: #BCC1CC;
+  --ds2v-color-neutral-lighter: #DDE2EB;
+  --ds2v-color-info: #0078bd;
+  --ds2v-color-info-dark: #000748;
+  --ds2v-color-info-light: #75eaeb;
+  --ds2v-color-success: #00C00C;
+  --ds2v-color-success-dark: #007808;
+  --ds2v-color-success-light: #60D867;
+  --ds2v-color-warning: #cb4d00;
+  --ds2v-color-warning-dark: #580000;
+  --ds2v-color-warning-light: #ffc729;
+  --ds2v-color-danger: #C00C00;
+  --ds2v-color-danger-dark: #780800;
+  --ds2v-color-danger-light: #D86760;
+}
+
+/*
+Styles for button component
+
+Example markup:
+
+<div class="ds2c-button">
+	<button>button</button>
+</div>
+
+*/
+.ds2c-button {
+  padding: 5px;
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: #C00C00;
+  --ds2f-default-border-color: rgba(0,0,0,0);
+  --ds2f-default-text-color: #FFFFFF;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: 0px 2px 4px 0px rgba(0,0,0,0.297);
+  --ds2f-hover-border-color: rgba(0,0,0,0);
+  --ds2f-hover-color: #D30D00;
+  --ds2f-hover-text-color: #FFFFFF;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: none;
+  --ds2f-active-color: #900900;
+  --ds2f-active-border-color: rgba(0,0,0,0);
+  --ds2f-active-text-color: #FFFFFF;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: 0px 0px 8px 0px rgba(0,0,0,0.205);
+  --ds2f-focus-border-color: rgba(0,0,0,0);
+  --ds2f-focus-color: #900900;
+  --ds2f-focus-text-color: #FFFFFF;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #525866;
+  --ds2f-disabled-border-color: #525866;
+  --ds2f-disabled-text-color: #FFFFFF;
+  --ds2f-disabled-opacity: 0.15;
+}
+.ds2c-button.ds2m-fullwidth {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ds2c-button.ds2m-white {
+  --ds2f-default-shadow: 0px 0px 6.3px 0px rgba(0,0,0,0.374);
+  --ds2f-default-color: #FFFFFF;
+  --ds2f-default-border-color: rgba(0,0,0,0);
+  --ds2f-default-text-color: #1F2533;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.374);
+  --ds2f-hover-color: #FFFFFF;
+  --ds2f-hover-border-color: rgba(0,0,0,0);
+  --ds2f-hover-text-color: #6B7280;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.374);
+  --ds2f-active-color: #FFFFFF;
+  --ds2f-active-border-color: rgba(0,0,0,0);
+  --ds2f-active-text-color: #1F2533;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.374);
+  --ds2f-focus-color: #FFFFFF;
+  --ds2f-focus-border-color: rgba(0,0,0,0);
+  --ds2f-focus-text-color: #525866;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: 0px 0px 6.3px 0px rgba(0,0,0,0.374);
+  --ds2f-disabled-color: #FFFFFF;
+  --ds2f-disabled-border-color: #FFFFFF;
+  --ds2f-disabled-text-color: #DDE2EB;
+  --ds2f-disabled-opacity: 1;
+}
+.ds2c-button.ds2m-outline {
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: #FFFFFF;
+  --ds2f-default-border-color: #0D111A;
+  --ds2f-default-text-color: #1F2533;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
+  --ds2f-hover-color: #FFFFFF;
+  --ds2f-hover-border-color: #6B7280;
+  --ds2f-hover-text-color: #6B7280;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: none;
+  --ds2f-active-color: #FFFFFF;
+  --ds2f-active-border-color: #0D111A;
+  --ds2f-active-text-color: #1F2533;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: #DDE2EB;
+  --ds2f-focus-border-color: #6B7280;
+  --ds2f-focus-text-color: #6B7280;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #FFFFFF;
+  --ds2f-disabled-border-color: #0D111A;
+  --ds2f-disabled-text-color: #1F2533;
+  --ds2f-disabled-opacity: 0.2;
+}
+.ds2c-button.ds2m-primary-text {
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: #00000000;
+  --ds2f-default-border-color: rgba(0,0,0,0);
+  --ds2f-default-text-color: #C00C00;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: none;
+  --ds2f-hover-color: #00000000;
+  --ds2f-hover-border-color: #C00C00;
+  --ds2f-hover-text-color: #C00C00;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: none;
+  --ds2f-active-color: rgba(192, 12, 0, 0.2);
+  --ds2f-active-border-color: #C00C00;
+  --ds2f-active-text-color: #C00C00;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: #00000000;
+  --ds2f-focus-border-color: rgba(192, 12, 0, 0.2);
+  --ds2f-focus-text-color: #C00C00;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #00000000;
+  --ds2f-disabled-border-color: rgba(0,0,0,0);
+  --ds2f-disabled-text-color: #C00C00;
+  --ds2f-disabled-opacity: 0.2;
+}
+.ds2c-button.ds2m-black-text {
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: #00000000;
+  --ds2f-default-border-color: rgba(0,0,0,0);
+  --ds2f-default-text-color: #1F2533;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: none;
+  --ds2f-hover-color: #00000000;
+  --ds2f-hover-border-color: #0D111A;
+  --ds2f-hover-text-color: #1F2533;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: none;
+  --ds2f-active-color: rgba(13, 17, 26, 0.2);
+  --ds2f-hover-border-color: #0D111A;
+  --ds2f-active-text-color: #1F2533;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: #00000000;
+  --ds2f-focus-border-color: rgba(13, 17, 26, 0.2);
+  --ds2f-focus-text-color: #1F2533;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #00000000;
+  --ds2f-disabled-border-color: rgba(0,0,0,0);
+  --ds2f-disabled-text-color: #1F2533;
+  --ds2f-disabled-opacity: 0.2;
+}
+.ds2c-button.ds2m-neutral-translucent {
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: rgba(13, 17, 26, 0.55);
+  --ds2f-default-border-color: #FFFFFF;
+  --ds2f-default-text-color: #FFFFFF;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
+  --ds2f-hover-color: rgba(13, 17, 26, 0.6);
+  --ds2f-hover-border-color: #FFFFFF;
+  --ds2f-hover-text-color: #FFFFFF;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
+  --ds2f-active-color: rgba(13, 17, 26, 0.7);
+  --ds2f-active-border-color: #FFFFFF;
+  --ds2f-active-text-color: #FFFFFF;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: rgba(13, 17, 26, 0.6);
+  --ds2f-focus-border-color: #FFFFFF;
+  --ds2f-focus-text-color: #FFFFFF;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #FFFFFF;
+  --ds2f-disabled-border-color: #0D111A;
+  --ds2f-disabled-text-color: #1F2533;
+  --ds2f-disabled-opacity: 0.2;
+}
+.ds2c-button button {
+  width: fit-content;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-style: solid;
+}
+.ds2c-button button {
+  background-color: var(--ds2f-default-color);
+  box-shadow: var(--ds2f-default-shadow);
+  border-color: var(--ds2f-default-border-color);
+  color: var(--ds2f-default-text-color);
+  opacity: var(--ds2f-default-opacity);
+}
+.ds2c-button button:enabled {
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+.ds2c-button button:enabled:hover:not(:active) {
+  background-color: var(--ds2f-hover-color);
+  box-shadow: var(--ds2f-hover-shadow);
+  border-color: var(--ds2f-hover-border-color);
+  color: var(--ds2f-hover-text-color);
+  opacity: var(--ds2f-hover-opacity);
+  cursor: pointer;
+}
+.ds2c-button button:enabled:focus {
+  background-color: var(--ds2f-focus-color);
+  box-shadow: var(--ds2f-focus-shadow);
+  border-color: var(--ds2f-focus-border-color);
+  color: var(--ds2f-focus-text-color);
+  opacity: var(--ds2f-focus-opacity);
+}
+.ds2c-button button:enabled:active {
+  background-color: var(--ds2f-active-color);
+  box-shadow: var(--ds2f-active-shadow);
+  border-color: var(--ds2f-active-border-color);
+  color: var(--ds2f-active-text-color);
+  opacity: var(--ds2f-active-opacity);
+  transition: none;
+}
+.ds2c-button button:disabled {
+  background-color: var(--ds2f-disabled-color);
+  box-shadow: var(--ds2f-disabled-shadow);
+  border-color: var(--ds2f-disabled-border-color);
+  color: var(--ds2f-disabled-text-color);
+  opacity: var(--ds2f-disabled-opacity);
+}
+.ds2c-button button {
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 13px;
+  border-width: 1.5px;
+}
+@media (min-width: 992px) {
+  .ds2c-button button {
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 18px;
+    border-width: 2.5px;
+  }
+}
+@media (min-width: 1366px) {
+  .ds2c-button button {
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 22px;
+    border-width: 3px;
+  }
+}
