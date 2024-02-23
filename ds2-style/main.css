@@ -56,6 +56,11 @@ Example markup:
 */
 .ds2c-button {
   user-select: none;
+  width: fit-content;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-style: solid;
   --ds2f-default-shadow: none;
   --ds2f-default-color: #C00C00;
   --ds2f-default-border-color: rgba(0,0,0,0);
@@ -81,21 +86,19 @@ Example markup:
   --ds2f-disabled-border-color: #525866;
   --ds2f-disabled-text-color: #FFFFFF;
   --ds2f-disabled-opacity: 0.15;
-  width: fit-content;
-  outline: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  border-style: solid;
   background-color: var(--ds2f-default-color);
   box-shadow: var(--ds2f-default-shadow);
   border-color: var(--ds2f-default-border-color);
   color: var(--ds2f-default-text-color);
   opacity: var(--ds2f-default-opacity);
-  --loader-size: 13px;
+  --loader-size: 18px;
   border-radius: 3px;
-  padding: 8px;
-  font-size: 13px;
-  border-width: 1.5px;
+  padding: 12px;
+  font-size: 18px;
+  border-width: 2.5px;
+}
+.ds2c-button:not(:last-child) {
+  margin-right: 0.5rem;
 }
 .ds2c-button.ds2m-white {
   --ds2f-default-shadow: 0px 0px 6.3px 0px rgba(0,0,0,0.15);
@@ -285,21 +288,17 @@ Example markup:
   opacity: var(--ds2f-disabled-opacity);
   cursor: not-allowed;
 }
-@media (min-width: 992px) {
-  .ds2c-button {
-    --loader-size: 18px;
-    border-radius: 3px;
-    padding: 12px;
-    font-size: 18px;
-    border-width: 2.5px;
-  }
+.ds2c-button.ds2m-small {
+  --loader-size: 13px;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 13px;
+  border-width: 1.5px;
 }
-@media (min-width: 1366px) {
-  .ds2c-button {
-    --loader-size: 22px;
-    border-radius: 3px;
-    padding: 15px;
-    font-size: 22px;
-    border-width: 3px;
-  }
+.ds2c-button.ds2m-large {
+  --loader-size: 22px;
+  border-radius: 3px;
+  padding: 15px;
+  font-size: 22px;
+  border-width: 3px;
 }

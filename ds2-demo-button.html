@@ -4,48 +4,141 @@
 	<head>
 		<link rel="stylesheet" href="ds2-style/main.css"/>
 		<style type="text/css">
+
+			.button-sections{
+				display:flex;
+				flex-direction:row;
+				flex-wrap:wrap;
+			}
+
+			.button-section{
+				padding:10px;
+				border-radius:10px;
+				border:3px grey solid;
+				width:fit-content;
+				margin:10px;
+			}
+	
 			.button-row{
 				display:flex;
 				flex-direction:row;
-				justify-content: space-around;
+				justify-content: start;
 				padding:10px;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="button-row">
-			<button class="ds2c-button">button</button>
-			<button class="ds2c-button ds2m-loading">button</button>
-			<button disabled class="ds2c-button">button</button>
-		</div>
+		<div class="button-sections">
+			<div class="button-section">
+				<div class="button-row">
+					<button class="ds2c-button ds2m-small">button</button>
+					<button class="ds2c-button ds2m-small ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-small">button</button>
+				</div>
 
-		<div class="button-row">
-			<button class="ds2c-button ds2m-white">button</button>
-			<button class="ds2c-button ds2m-white ds2m-loading">button</button>
-			<button disabled class="ds2c-button ds2m-white">button</button>
-		</div>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-small ds2m-white">button</button>
+					<button class="ds2c-button ds2m-small ds2m-white ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-small ds2m-white">button</button>
+				</div>
 
-		<div class="button-row">
-			<button class="ds2c-button ds2m-outline">button</button>
-			<button class="ds2c-button ds2m-outline ds2m-loading">button</button>
-			<button disabled class="ds2c-button ds2m-outline">button</button>
-		</div>
-		<div class="button-row">
-			<button class="ds2c-button ds2m-primary-text">button</button>
-			<button class="ds2c-button ds2m-primary-text ds2m-loading">button</button>
-			<button disabled class="ds2c-button ds2m-primary-text">button</button>
-		</div>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-small ds2m-outline">button</button>
+					<button class="ds2c-button ds2m-small ds2m-outline ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-small ds2m-outline">button</button>
+				</div>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-small ds2m-primary-text">button</button>
+					<button class="ds2c-button ds2m-small ds2m-primary-text ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-small ds2m-primary-text">button</button>
+				</div>
 
-		<div class="button-row">
-			<button class="ds2c-button ds2m-black-text">button</button>
-			<button class="ds2c-button ds2m-black-text ds2m-loading">button</button>
-			<button disabled class="ds2c-button ds2m-black-text">button</button>
-		</div>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-small ds2m-black-text">button</button>
+					<button class="ds2c-button ds2m-small ds2m-black-text ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-small ds2m-black-text">button</button>
+				</div>
 
-		<div class="button-row">
-			<button class="ds2c-button ds2m-neutral-translucent">button</button>
-			<button class="ds2c-button ds2m-neutral-translucent ds2m-loading">button</button>
-			<button disabled class="ds2c-button ds2m-neutral-translucent">button</button>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-small ds2m-neutral-translucent">button</button>
+					<button class="ds2c-button ds2m-small ds2m-neutral-translucent ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-small ds2m-neutral-translucent">button</button>
+				</div>
+			</div>
+
+			<div class="button-section">
+				<div class="button-row">
+					<button class="ds2c-button">button</button>
+					<button class="ds2c-button ds2m-loading">button</button>
+					<button disabled class="ds2c-button">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-white">button</button>
+					<button class="ds2c-button ds2m-white ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-white">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-outline">button</button>
+					<button class="ds2c-button ds2m-outline ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-outline">button</button>
+				</div>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-primary-text">button</button>
+					<button class="ds2c-button ds2m-primary-text ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-primary-text">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-black-text">button</button>
+					<button class="ds2c-button ds2m-black-text ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-black-text">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-neutral-translucent">button</button>
+					<button class="ds2c-button ds2m-neutral-translucent ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-neutral-translucent">button</button>
+				</div>
+			</div>
+
+			<div class="button-section">
+				<div class="button-row">
+					<button class="ds2c-button ds2m-large">button</button>
+					<button class="ds2c-button ds2m-large ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-large">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-large ds2m-white">button</button>
+					<button class="ds2c-button ds2m-large ds2m-white ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-large ds2m-white">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-large ds2m-outline">button</button>
+					<button class="ds2c-button ds2m-large ds2m-outline ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-large ds2m-outline">button</button>
+				</div>
+				<div class="button-row">
+					<button class="ds2c-button ds2m-large ds2m-primary-text">button</button>
+					<button class="ds2c-button ds2m-large ds2m-primary-text ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-large ds2m-primary-text">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-large ds2m-black-text">button</button>
+					<button class="ds2c-button ds2m-large ds2m-black-text ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-large ds2m-black-text">button</button>
+				</div>
+
+				<div class="button-row">
+					<button class="ds2c-button ds2m-large ds2m-neutral-translucent">button</button>
+					<button class="ds2c-button ds2m-large ds2m-neutral-translucent ds2m-loading">button</button>
+					<button disabled class="ds2c-button ds2m-large ds2m-neutral-translucent">button</button>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
