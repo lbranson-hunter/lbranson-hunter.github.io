@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@keyframes ds2k-spin {
+  from {
+    tranform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 :root {
   font-family: "Roboto Flex", sans-serif;
   font-optical-sizing: auto;
@@ -215,6 +223,25 @@ Example markup:
   --ds2f-disabled-text-color: #1F2533;
   --ds2f-disabled-opacity: 0.2;
 }
+.ds2c-button.ds2m-loading button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0) !important;
+}
+.ds2c-button.ds2m-loading button:before {
+  content: "";
+  animation: ds2k-spin 1s linear 0s infinite;
+  display: inline-block;
+  border-color: var(--ds2f-default-text-color) var(--ds2f-default-text-color) var(--ds2f-default-text-color) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 3px;
+  position: absolute;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  border-radius: 5000px;
+}
 .ds2c-button button {
   width: fit-content;
   outline: none;
@@ -261,8 +288,10 @@ Example markup:
   border-color: var(--ds2f-disabled-border-color);
   color: var(--ds2f-disabled-text-color);
   opacity: var(--ds2f-disabled-opacity);
+  cursor: not-allowed;
 }
 .ds2c-button button {
+  --loader-size: 13px;
   border-radius: 3px;
   padding: 8px;
   font-size: 13px;
@@ -270,6 +299,7 @@ Example markup:
 }
 @media (min-width: 992px) {
   .ds2c-button button {
+    --loader-size: 18px;
     border-radius: 3px;
     padding: 12px;
     font-size: 18px;
@@ -278,6 +308,7 @@ Example markup:
 }
 @media (min-width: 1366px) {
   .ds2c-button button {
+    --loader-size: 22px;
     border-radius: 3px;
     padding: 15px;
     font-size: 22px;
