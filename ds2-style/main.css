@@ -66,7 +66,7 @@ Example markup:
   --ds2f-default-border-color: rgba(0,0,0,0);
   --ds2f-default-text-color: #FFFFFF;
   --ds2f-default-opacity: 1;
-  --ds2f-hover-shadow: 0px 2px 4px 0px rgba(0,0,0,0.297);
+  --ds2f-hover-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,0.297);
   --ds2f-hover-border-color: rgba(0,0,0,0);
   --ds2f-hover-color: #D30D00;
   --ds2f-hover-text-color: #FFFFFF;
@@ -76,7 +76,7 @@ Example markup:
   --ds2f-active-border-color: rgba(0,0,0,0);
   --ds2f-active-text-color: #FFFFFF;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0px 0px 8px 0px rgba(0,0,0,0.205);
+  --ds2f-focus-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.205);
   --ds2f-focus-border-color: rgba(0,0,0,0);
   --ds2f-focus-color: #900900;
   --ds2f-focus-text-color: #FFFFFF;
@@ -91,37 +91,37 @@ Example markup:
   border-color: var(--ds2f-default-border-color);
   color: var(--ds2f-default-text-color);
   opacity: var(--ds2f-default-opacity);
-  --loader-size: 18px;
-  border-radius: 3px;
-  padding: 12px;
-  font-size: 18px;
-  border-width: 2.5px;
+  --loader-size: 0.85rem;
+  border-radius: 0.1407rem;
+  padding: 0.562rem;
+  font-size: 0.85rem;
+  border-width: 0.1172rem;
 }
 .ds2c-button:not(:last-child) {
   margin-right: 0.5rem;
 }
-.ds2c-button.ds2m-white {
-  --ds2f-default-shadow: 0px 0px 6.3px 0px rgba(0,0,0,0.15);
+.ds2c-button.ds2m-secondary {
+  --ds2f-default-shadow: 0 0 0.39375 0 rgba(0,0,0,0.15);
   --ds2f-default-color: #FFFFFF;
   --ds2f-default-border-color: rgba(0,0,0,0);
   --ds2f-default-text-color: #1F2533;
   --ds2f-default-opacity: 1;
-  --ds2f-hover-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.25);
+  --ds2f-hover-shadow: 0 0 0.68125rem 0 rgba(0,0,0,0.25);
   --ds2f-hover-color: #FFFFFF;
   --ds2f-hover-border-color: rgba(0,0,0,0);
   --ds2f-hover-text-color: #BCC1CC;
   --ds2f-hover-opacity: 1;
-  --ds2f-active-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.20);
+  --ds2f-active-shadow: 0 0 0.68125rem 0 rgba(0,0,0,0.20);
   --ds2f-active-color: #FFFFFF;
   --ds2f-active-border-color: rgba(0,0,0,0);
   --ds2f-active-text-color: #EBEEF5;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0px 0px 10.9px 0px rgba(0,0,0,0.25);
+  --ds2f-focus-shadow: 0 0 0.68125rem 0 rgba(0,0,0,0.25);
   --ds2f-focus-color: #FFFFFF;
   --ds2f-focus-border-color: rgba(0,0,0,0);
   --ds2f-focus-text-color: #6B7280;
   --ds2f-focus-opacity: 1;
-  --ds2f-disabled-shadow: 0px 0px 6.3px 0px rgba(0,0,0,0.374);
+  --ds2f-disabled-shadow: 0 0 0.39375rem 0 rgba(0,0,0,0.15);
   --ds2f-disabled-color: #FFFFFF;
   --ds2f-disabled-border-color: #FFFFFF;
   --ds2f-disabled-text-color: #DDE2EB;
@@ -143,7 +143,7 @@ Example markup:
   --ds2f-active-border-color: #0D111A;
   --ds2f-active-text-color: #1F2533;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.21);
+  --ds2f-focus-shadow: 0 0 0.5rem 0 rgba(0,0,0, 0.21);
   --ds2f-focus-color: #FFFFFF;
   --ds2f-focus-border-color: #6B7280;
   --ds2f-focus-text-color: #6B7280;
@@ -181,7 +181,7 @@ Example markup:
   --ds2f-disabled-text-color: #C00C00;
   --ds2f-disabled-opacity: 0.2;
 }
-.ds2c-button.ds2m-black-text {
+.ds2c-button.ds2m-dark-text {
   --ds2f-default-shadow: none;
   --ds2f-default-color: #00000000;
   --ds2f-default-border-color: rgba(0,0,0,0);
@@ -214,12 +214,12 @@ Example markup:
   --ds2f-default-border-color: #FFFFFF;
   --ds2f-default-text-color: #FFFFFF;
   --ds2f-default-opacity: 1;
-  --ds2f-hover-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
+  --ds2f-hover-shadow: 0 0 0.5rem 0 rgba(0,0,0, 0.20);
   --ds2f-hover-color: rgba(13, 17, 26, 0.6);
   --ds2f-hover-border-color: #FFFFFF;
   --ds2f-hover-text-color: #FFFFFF;
   --ds2f-hover-opacity: 1;
-  --ds2f-active-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.20);
+  --ds2f-active-shadow: 0 0 0.5rem 0 rgba(0,0,0, 0.20);
   --ds2f-active-color: rgba(13, 17, 26, 0.7);
   --ds2f-active-border-color: #FFFFFF;
   --ds2f-active-text-color: #FFFFFF;
@@ -248,11 +248,11 @@ Example markup:
   display: inline-block;
   border-color: var(--ds2f-default-text-color) var(--ds2f-default-text-color) var(--ds2f-default-text-color) rgba(0, 0, 0, 0);
   border-style: solid;
-  border-width: 3px;
+  border-width: 0.1875rem;
   position: absolute;
   width: var(--loader-size);
   height: var(--loader-size);
-  border-radius: 5000px;
+  border-radius: 5000rem;
 }
 .ds2c-button:enabled {
   transition: border-color 0.5s, background-color 0.5s, color 0.5s, box-shadow 0.5s;
@@ -289,16 +289,39 @@ Example markup:
   cursor: not-allowed;
 }
 .ds2c-button.ds2m-small {
-  --loader-size: 13px;
-  border-radius: 3px;
-  padding: 8px;
-  font-size: 13px;
-  border-width: 1.5px;
+  --loader-size: 0.609rem;
+  border-radius: 0.1407rem;
+  padding: 0.375rem;
+  font-size: 0.609rem;
+  border-width: 0.09375rem;
 }
 .ds2c-button.ds2m-large {
-  --loader-size: 22px;
-  border-radius: 3px;
-  padding: 15px;
-  font-size: 22px;
-  border-width: 3px;
+  --loader-size: 1.031rem;
+  border-radius: 0.1406rem;
+  padding: 0.703rem;
+  font-size: 1.031rem;
+  border-width: 0.1406rem;
+}
+@media (min-width: 992px) {
+  .ds2c-button {
+    --loader-size: 1.125rem;
+    border-radius: 0.1875rem;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    border-width: 0.15625rem;
+  }
+  .ds2c-button.ds2m-small {
+    --loader-size: 0.8125rem;
+    border-radius: 0.1875rem;
+    padding: 0.5rem;
+    font-size: 0.8125rem;
+    border-width: 0.09375rem;
+  }
+  .ds2c-button.ds2m-large {
+    --loader-size: 1.375rem;
+    border-radius: 0.1875rem;
+    padding: 0.9375rem;
+    font-size: 1.375rem;
+    border-width: 0.1875rem;
+  }
 }
