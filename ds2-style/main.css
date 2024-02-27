@@ -23,7 +23,7 @@
   --ds2v-color-primary-dark: #A80B00;
   --ds2v-color-primary-darker: #900900;
   --ds2v-color-primary-darkest: #780800;
-  --ds2v-color-primary-light: #D86760;
+  --ds2v-color-primary-light: #C82A20;
   --ds2v-color-primary-active: #D30D00;
   --ds2v-color-neutral: #6B7280;
   --ds2v-color-neutral-dark: #525866;
@@ -66,7 +66,7 @@ Example markup:
   --ds2f-default-border-color: rgba(0,0,0,0);
   --ds2f-default-text-color: #FFFFFF;
   --ds2f-default-opacity: 1;
-  --ds2f-hover-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,0.297);
+  --ds2f-hover-shadow: 0 0 0.75rem 0 rgba(0,0,0,0.3);
   --ds2f-hover-border-color: rgba(0,0,0,0);
   --ds2f-hover-color: #D30D00;
   --ds2f-hover-text-color: #FFFFFF;
@@ -76,8 +76,8 @@ Example markup:
   --ds2f-active-border-color: rgba(0,0,0,0);
   --ds2f-active-text-color: #FFFFFF;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0 0 0.5rem 0 rgba(0,0,0,0.205);
-  --ds2f-focus-border-color: rgba(0,0,0,0);
+  --ds2f-focus-shadow: 0 0 0.75rem 0 rgba(0,0,0,0.25);
+  --ds2f-focus-border-color: #D04940;
   --ds2f-focus-color: #900900;
   --ds2f-focus-text-color: #FFFFFF;
   --ds2f-focus-opacity: 1;
@@ -101,12 +101,12 @@ Example markup:
   margin-right: 0.5rem;
 }
 .ds2c-button.ds2m-secondary {
-  --ds2f-default-shadow: 0 0 0.39375 0 rgba(0,0,0,0.15);
+  --ds2f-default-shadow: 0 0 0.75rem 0 rgba(0,0,0,0.15);
   --ds2f-default-color: #FFFFFF;
   --ds2f-default-border-color: rgba(0,0,0,0);
   --ds2f-default-text-color: #1F2533;
   --ds2f-default-opacity: 1;
-  --ds2f-hover-shadow: 0 0 0.68125rem 0 rgba(0,0,0,0.25);
+  --ds2f-hover-shadow: 0 0 1rem 0 rgba(0,0,0,0.25);
   --ds2f-hover-color: #FFFFFF;
   --ds2f-hover-border-color: rgba(0,0,0,0);
   --ds2f-hover-text-color: #BCC1CC;
@@ -116,9 +116,9 @@ Example markup:
   --ds2f-active-border-color: rgba(0,0,0,0);
   --ds2f-active-text-color: #EBEEF5;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0 0 0.68125rem 0 rgba(0,0,0,0.25);
+  --ds2f-focus-shadow: 0 0 0.75rem 0 rgba(0,0,0,0.25);
   --ds2f-focus-color: #FFFFFF;
-  --ds2f-focus-border-color: rgba(0,0,0,0);
+  --ds2f-focus-border-color: rgba(31, 37, 51, 0.2);
   --ds2f-focus-text-color: #6B7280;
   --ds2f-focus-opacity: 1;
   --ds2f-disabled-shadow: 0 0 0.39375rem 0 rgba(0,0,0,0.15);
@@ -143,7 +143,7 @@ Example markup:
   --ds2f-active-border-color: #0D111A;
   --ds2f-active-text-color: #1F2533;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0 0 0.5rem 0 rgba(0,0,0, 0.21);
+  --ds2f-focus-shadow: 0 0 0.75rem 0 rgba(0,0,0, 0.25);
   --ds2f-focus-color: #FFFFFF;
   --ds2f-focus-border-color: #6B7280;
   --ds2f-focus-text-color: #6B7280;
@@ -224,7 +224,7 @@ Example markup:
   --ds2f-active-border-color: #FFFFFF;
   --ds2f-active-text-color: #FFFFFF;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: none;
+  --ds2f-focus-shadow: 0 0 0.75rem 0 rgba(0,0,0, 0.2);
   --ds2f-focus-color: rgba(13, 17, 26, 0.6);
   --ds2f-focus-border-color: #FFFFFF;
   --ds2f-focus-text-color: #FFFFFF;
