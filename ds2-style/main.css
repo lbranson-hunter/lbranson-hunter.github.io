@@ -100,7 +100,7 @@ Example markup:
 .ds2c-button:not(:last-child) {
   margin-right: 0.5rem;
 }
-.ds2c-button.ds2m-secondary {
+.ds2c-button.ds2m-light {
   --ds2f-default-shadow: 0 0 0.75rem 0 rgba(0,0,0,0.15);
   --ds2f-default-color: #FFFFFF;
   --ds2f-default-border-color: rgba(0,0,0,0);
@@ -127,34 +127,61 @@ Example markup:
   --ds2f-disabled-text-color: #DDE2EB;
   --ds2f-disabled-opacity: 1;
 }
-.ds2c-button.ds2m-outline {
+.ds2c-button.ds2m-secondary-dark {
   --ds2f-default-shadow: none;
-  --ds2f-default-color: #FFFFFF;
-  --ds2f-default-border-color: #0D111A;
+  --ds2f-default-color: #00000000;
+  --ds2f-default-border-color: #1F2533;
   --ds2f-default-text-color: #1F2533;
   --ds2f-default-opacity: 1;
   --ds2f-hover-shadow: none;
-  --ds2f-hover-color: #BCC1CC;
-  --ds2f-hover-border-color: #6B7280;
-  --ds2f-hover-text-color: #6B7280;
+  --ds2f-hover-color: rgba(31, 37, 51, 0.1);
+  --ds2f-hover-border-color: #1F2533;
+  --ds2f-hover-text-color: #1F2533;
   --ds2f-hover-opacity: 1;
   --ds2f-active-shadow: none;
-  --ds2f-active-color: #BCC1CC;
-  --ds2f-active-border-color: #0D111A;
+  --ds2f-active-color: rgba(31, 37, 51, 0.2);
+  --ds2f-active-border-color: #1F2533;
   --ds2f-active-text-color: #1F2533;
   --ds2f-active-opacity: 1;
-  --ds2f-focus-shadow: 0 0 0.75rem 0 rgba(0,0,0, 0.25);
-  --ds2f-focus-color: #FFFFFF;
-  --ds2f-focus-border-color: #6B7280;
-  --ds2f-focus-text-color: #6B7280;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: #00000000;
+  --ds2f-focus-border-color: rgba(31, 37, 51, 0.2);
+  --ds2f-focus-text-color: #1F2533;
   --ds2f-focus-opacity: 1;
   --ds2f-disabled-shadow: none;
   --ds2f-disabled-color: #FFFFFF;
-  --ds2f-disabled-border-color: #0D111A;
+  --ds2f-disabled-border-color: #1F2533;
   --ds2f-disabled-text-color: #1F2533;
   --ds2f-disabled-opacity: 0.2;
 }
-.ds2c-button.ds2m-primary-text {
+.ds2c-button.ds2m-secondary-light {
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: #00000000;
+  --ds2f-default-border-color: #FFFFFF;
+  --ds2f-default-text-color: #FFFFFF;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: none;
+  --ds2f-hover-color: rgba(255, 255, 255, 0.1);
+  --ds2f-hover-border-color: #FFFFFF;
+  --ds2f-hover-text-color: #FFFFFF;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: none;
+  --ds2f-active-color: rgba(255, 255, 255, 0.2);
+  --ds2f-active-border-color: #FFFFFF;
+  --ds2f-active-text-color: #FFFFFF;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: #00000000;
+  --ds2f-focus-border-color: rgba(255, 255, 255, 0.2);
+  --ds2f-focus-text-color: #FFFFFF;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #00000000;
+  --ds2f-disabled-border-color: rgba(0,0,0,0);
+  --ds2f-disabled-text-color: #FFFFFF;
+  --ds2f-disabled-opacity: 0.2;
+}
+.ds2c-button.ds2m-ghost-primary {
   --ds2f-default-shadow: none;
   --ds2f-default-color: #00000000;
   --ds2f-default-border-color: rgba(0,0,0,0);
@@ -181,7 +208,7 @@ Example markup:
   --ds2f-disabled-text-color: #C00C00;
   --ds2f-disabled-opacity: 0.2;
 }
-.ds2c-button.ds2m-dark-text {
+.ds2c-button.ds2m-ghost-dark {
   --ds2f-default-shadow: none;
   --ds2f-default-color: #00000000;
   --ds2f-default-border-color: rgba(0,0,0,0);
@@ -206,6 +233,32 @@ Example markup:
   --ds2f-disabled-color: #00000000;
   --ds2f-disabled-border-color: rgba(0,0,0,0);
   --ds2f-disabled-text-color: #1F2533;
+  --ds2f-disabled-opacity: 0.2;
+}
+.ds2c-button.ds2m-ghost-light {
+  --ds2f-default-shadow: none;
+  --ds2f-default-color: #00000000;
+  --ds2f-default-border-color: rgba(0,0,0,0);
+  --ds2f-default-text-color: #FFFFFF;
+  --ds2f-default-opacity: 1;
+  --ds2f-hover-shadow: none;
+  --ds2f-hover-color: rgba(255, 255, 255, 0.1);
+  --ds2f-hover-border-color: #00000000;
+  --ds2f-hover-text-color: #FFFFFF;
+  --ds2f-hover-opacity: 1;
+  --ds2f-active-shadow: none;
+  --ds2f-active-color: rgba(255, 255, 255, 0.2);
+  --ds2f-active-text-color: #FFFFFF;
+  --ds2f-active-opacity: 1;
+  --ds2f-focus-shadow: none;
+  --ds2f-focus-color: #00000000;
+  --ds2f-focus-border-color: rgba(255, 255, 255, 0.2);
+  --ds2f-focus-text-color: #FFFFFF;
+  --ds2f-focus-opacity: 1;
+  --ds2f-disabled-shadow: none;
+  --ds2f-disabled-color: #00000000;
+  --ds2f-disabled-border-color: rgba(0,0,0,0);
+  --ds2f-disabled-text-color: #FFFFFF;
   --ds2f-disabled-opacity: 0.2;
 }
 .ds2c-button.ds2m-neutral-translucent {
