@@ -221,7 +221,7 @@ Example markup:
   --ds2f-hover-opacity: 1;
   --ds2f-active-shadow: none;
   --ds2f-active-color: rgba(13, 17, 26, 0.2);
-  --ds2f-hover-border-color: #0D111A;
+  --ds2f-active-border-color: #0D111A;
   --ds2f-active-text-color: #1F2533;
   --ds2f-active-opacity: 1;
   --ds2f-focus-shadow: none;
