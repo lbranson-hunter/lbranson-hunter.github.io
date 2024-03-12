@@ -1,0 +1,2 @@
+copy /Y "C:\Users\lbranson\source\repos\hunter-styles-ds2\dist\main.css" "C:\Users\lbranson\source\repos\lbranson-hunter.github.io\ds2-style\"
+copy /Y "C:\Users\lbranson\source\repos\hunter-styles-ds2\dist\main.js" "C:\Users\lbranson\source\repos\lbranson-hunter.github.io\ds2-style\"
