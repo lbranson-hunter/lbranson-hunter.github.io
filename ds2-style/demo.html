@@ -466,7 +466,10 @@
 		</div>
 	</body>
 	<script type="text/javascript">
-	
+
+		var urlParams = new URLSearchParams(window.location.search);
+		var preSelectedComponent = urlParams.get('component');
+
 		function switchToComponent(){
 			var demoBoxes = document.getElementsByClassName("component-demo-box");
 			for(var i = 0; i < demoBoxes.length; i++){
@@ -507,7 +510,10 @@
 			});
         });
 		
-		document.querySelectorAll(".component-selector-box")[0].addEventListener("input", function(){switchToComponent();});
+		document.querySelectorAll(".component-selector-box")[0].addEventListener("input", function () { switchToComponent(); });
+        if (preSelectedComponent != null) {
+            document.getElementById("component-selector").value = preSelectedComponent;
+		}
 		switchToComponent();
 	</script>
 	<script src="main.js"></script>
