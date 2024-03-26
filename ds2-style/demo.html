@@ -39,16 +39,12 @@
 		}
 
 		.component-view-box {
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			padding-left: 10px;
+			padding: 1rem;
 			border-bottom: 2px var(--ds2v-color-neutral-light) solid;
 		}
 
 		.html-view-box {
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			padding-left: 10px;
+			padding: 1rem;
 			border-bottom: 2px var(--ds2v-color-neutral-light) solid;
 		}
 
@@ -87,7 +83,7 @@
 		<div class="component-selector-box">
 			<h3 class="ds2u-font-heading-h4">Select Component</h3>
 			<select id="component-selector">
-				<option value="button">button</option><option value="input">input</option><option value="accordion-switcher">accordion-switcher</option><option value="card">card</option><option value="slider-card">slider-card</option>
+				<option value="button">button</option><option value="input">input</option><option value="accordion-switcher">accordion-switcher</option><option value="callout">callout</option><option value="card">card</option><option value="slider-card">slider-card</option>
 			</select>
 		</div>
 		
@@ -406,93 +402,113 @@
 			&#60;img src="<span class='authorable-code'>https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-quickcheckcommercial.jpg</span>" /&#62;
 		&#60;/div&#62;
 	&#60;/aside&#62;
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-callout' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h4 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label'>color</h4><select><option value=''>[none]</option><option value='ds2m-neutral-light'>ds2m-neutral-light</option><option value='ds2m-neutral'>ds2m-neutral</option><option value='ds2m-dark'>ds2m-dark</option></select></div></div><div class='component-view-box'><div class="ds2c-callout">
+    <div class="ds2s-icon-box" id='showHide-6' >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g clip-path="url(#clip0_388_832)"><path d="M34.5 3H28.5H19.5V0H16.5V3H7.5H1.5C0.6 3 0 3.6 0 4.5V9C0 9.9 0.6 10.5 1.5 10.5H4.5C4.95 10.5 5.4 10.2 5.7 9.9L8.25 6H16.5V10.5H13.5C12.6 10.5 12 11.1 12 12V18H10.5C9.6 18 9 18.6 9 19.5V33C9 33.9 9.6 34.5 10.5 34.5V36H13.5V34.5H22.5V36H25.5V34.5C26.4 34.5 27 33.9 27 33V19.5C27 18.6 26.4 18 25.5 18H24V12C24 11.1 23.4 10.5 22.5 10.5H19.5V6H27.75L30.3 9.9C30.6 10.2 31.05 10.5 31.5 10.5H34.5C35.4 10.5 36 9.9 36 9V4.5C36 3.6 35.4 3 34.5 3ZM3.75 7.5H3V6H4.65L3.75 7.5ZM13.5 21H22.5H24V22.5H12V21H13.5ZM12 25.5H24V31.5H12V25.5ZM21 18H15V13.5H21V18ZM33 7.5H32.25L31.2 6H33V7.5Z" /></g><defs><clipPath id="clip0_388_832"><rect width="36" height="36" /></clipPath></defs></svg>
+    </div>
+      <div class="ds2s-text">
+          <h4>Did you know??</h4>
+          <p>Over the course of 5 million miles, a fleet with properly aligned wheels will save approximately $60,000 in fuel and 18 million miles of tire life.</p>
+          <button class="ds2c-button ds2m-light" id='showHide-7' >button</button>
+      </div>
+
+</div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h4'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-callout"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-6'>&#60;div class="ds2s-icon-box"&#62;
+        &#60;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"&#62;&#60;g clip-path="url(#clip0_388_832)"&#62;&#60;path d="M34.5 3H28.5H19.5V0H16.5V3H7.5H1.5C0.6 3 0 3.6 0 4.5V9C0 9.9 0.6 10.5 1.5 10.5H4.5C4.95 10.5 5.4 10.2 5.7 9.9L8.25 6H16.5V10.5H13.5C12.6 10.5 12 11.1 12 12V18H10.5C9.6 18 9 18.6 9 19.5V33C9 33.9 9.6 34.5 10.5 34.5V36H13.5V34.5H22.5V36H25.5V34.5C26.4 34.5 27 33.9 27 33V19.5C27 18.6 26.4 18 25.5 18H24V12C24 11.1 23.4 10.5 22.5 10.5H19.5V6H27.75L30.3 9.9C30.6 10.2 31.05 10.5 31.5 10.5H34.5C35.4 10.5 36 9.9 36 9V4.5C36 3.6 35.4 3 34.5 3ZM3.75 7.5H3V6H4.65L3.75 7.5ZM13.5 21H22.5H24V22.5H12V21H13.5ZM12 25.5H24V31.5H12V25.5ZM21 18H15V13.5H21V18ZM33 7.5H32.25L31.2 6H33V7.5Z" /&#62;&#60;/g&#62;&#60;defs&#62;&#60;clipPath id="clip0_388_832"&#62;&#60;rect width="36" height="36" /&#62;&#60;/clipPath&#62;&#60;/defs&#62;&#60;/svg&#62;
+    &#60;/div&#62;</span>
+      &#60;div class="ds2s-text"&#62;
+          &#60;h4&#62;<span class='authorable-code'>Did you know??</span>&#60;/h4&#62;
+          &#60;p&#62;<span class='authorable-code'>Over the course of 5 million miles, a fleet with properly aligned wheels will save approximately $60,000 in fuel and 18 million miles of tire life.</span>&#60;/p&#62;
+          <span class='showHideBtn' showHideTarget='showHide-7'>&#60;button class="ds2c-button ds2m-light"&#62;<span class='authorable-code'>button</span>&#60;/button&#62;</span>
+      &#60;/div&#62;
+
 &#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-card' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h4 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label'>color</h4><select><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option><option value='ds2m-bg-image-primary'>ds2m-bg-image-primary</option><option value='ds2m-bg-image-dark'>ds2m-bg-image-dark</option></select></div></div><div class='component-view-box'><div class="ds2c-card">
-    <img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA=="  id='showHide-6' />
+    <img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA=="  id='showHide-8' />
     <div class="ds2s-titlesection">
-        <div class="ds2s-title-icon" id='showHide-7' >
+        <div class="ds2s-title-icon" id='showHide-9' >
             <svg viewBox="0 0 24 24"> <ellipse style="fill:#c00c00;stroke-width:18.8976;stroke-linecap:round;fill-opacity:1" id="path322" cx="11.972603" cy="11.972603" rx="11.917809" ry="11.972603" /><g clip-path="url(#clip0_42_2063)" id="g147" transform="matrix(0.59360731,0,0,0.59360731,4.8767123,4.8767123)" style="fill:#ffffff;fill-opacity:1"><path d="M 23,2 H 19 13 V 0 H 11 V 2 H 5 1 C 0.4,2 0,2.4 0,3 V 6 C 0,6.6 0.4,7 1,7 H 3 C 3.3,7 3.6,6.8 3.8,6.6 L 5.5,4 H 11 V 7 H 9 C 8.4,7 8,7.4 8,8 v 4 H 7 c -0.6,0 -1,0.4 -1,1 v 9 c 0,0.6 0.4,1 1,1 v 1 h 2 v -1 h 6 v 1 h 2 v -1 c 0.6,0 1,-0.4 1,-1 v -9 c 0,-0.6 -0.4,-1 -1,-1 H 16 V 8 C 16,7.4 15.6,7 15,7 H 13 V 4 h 5.5 l 1.7,2.6 C 20.4,6.8 20.7,7 21,7 h 2 c 0.6,0 1,-0.4 1,-1 V 3 C 24,2.4 23.6,2 23,2 Z M 2.5,5 H 2 V 4 H 3.1 Z M 9,14 h 6 1 v 1 H 8 v -1 z m -1,3 h 8 v 4 H 8 Z m 6,-5 H 10 V 9 h 4 z M 22,5 H 21.5 L 20.8,4 H 22 Z" fill="#1f2533" id="path145" style="fill:#ffffff;fill-opacity:1" /></g></svg>
         </div>
         <div class="ds2s-title-text">
-            <span id='showHide-8' >label</span>
+            <span id='showHide-10' >label</span>
             <h4>Card Title</h4>
-            <h5 id='showHide-9' >Sub Title</h5>
+            <h5 id='showHide-11' >Sub Title</h5>
         </div>
     </div>
-    <div class="ds2s-body-text" id='showHide-10' >
+    <div class="ds2s-body-text" id='showHide-12' >
         Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment. <a href="#">read more</a>
     </div>
     <div class="ds2s-flex-spacer"></div>
-    <div class="ds2s-tag-section" id='showHide-11' >
+    <div class="ds2s-tag-section" id='showHide-13' >
         <a>tag name</a>
         <a>another tag</a>
         <a>third tag</a>
     </div>
-    <div class="ds2s-button-section" id='showHide-12' >
+    <div class="ds2s-button-section" id='showHide-14' >
         <a class="ds2c-button ds2m-small">Button</a>
         <a class="ds2c-button ds2m-small">Button</a>
     </div>
-    <div class="ds2s-link-section" id='showHide-13' >
+    <div class="ds2s-link-section" id='showHide-15' >
         <a href="#">go to link</a>
     </div>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h4'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-card"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-6'>&#60;img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA==" /&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-8'>&#60;img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA==" /&#62;</span>
     &#60;div class="ds2s-titlesection"&#62;
-        <span class='showHideBtn' showHideTarget='showHide-7'>&#60;div class="ds2s-title-icon"&#62;
+        <span class='showHideBtn' showHideTarget='showHide-9'>&#60;div class="ds2s-title-icon"&#62;
             <span class='authorable-code'>&#60;svg viewBox="0 0 24 24"&#62; &#60;ellipse style="fill:#c00c00;stroke-width:18.8976;stroke-linecap:round;fill-opacity:1" id="path322" cx="11.972603" cy="11.972603" rx="11.917809" ry="11.972603" /&#62;&#60;g clip-path="url(#clip0_42_2063)" id="g147" transform="matrix(0.59360731,0,0,0.59360731,4.8767123,4.8767123)" style="fill:#ffffff;fill-opacity:1"&#62;&#60;path d="M 23,2 H 19 13 V 0 H 11 V 2 H 5 1 C 0.4,2 0,2.4 0,3 V 6 C 0,6.6 0.4,7 1,7 H 3 C 3.3,7 3.6,6.8 3.8,6.6 L 5.5,4 H 11 V 7 H 9 C 8.4,7 8,7.4 8,8 v 4 H 7 c -0.6,0 -1,0.4 -1,1 v 9 c 0,0.6 0.4,1 1,1 v 1 h 2 v -1 h 6 v 1 h 2 v -1 c 0.6,0 1,-0.4 1,-1 v -9 c 0,-0.6 -0.4,-1 -1,-1 H 16 V 8 C 16,7.4 15.6,7 15,7 H 13 V 4 h 5.5 l 1.7,2.6 C 20.4,6.8 20.7,7 21,7 h 2 c 0.6,0 1,-0.4 1,-1 V 3 C 24,2.4 23.6,2 23,2 Z M 2.5,5 H 2 V 4 H 3.1 Z M 9,14 h 6 1 v 1 H 8 v -1 z m -1,3 h 8 v 4 H 8 Z m 6,-5 H 10 V 9 h 4 z M 22,5 H 21.5 L 20.8,4 H 22 Z" fill="#1f2533" id="path145" style="fill:#ffffff;fill-opacity:1" /&#62;&#60;/g&#62;&#60;/svg&#62;</span>
         &#60;/div&#62;</span>
         &#60;div class="ds2s-title-text"&#62;
-            <span class='showHideBtn' showHideTarget='showHide-8'>&#60;span&#62;<span class='authorable-code'>label</span>&#60;/span&#62;</span>
+            <span class='showHideBtn' showHideTarget='showHide-10'>&#60;span&#62;<span class='authorable-code'>label</span>&#60;/span&#62;</span>
             &#60;h4&#62;<span class='authorable-code'>Card Title</span>&#60;/h4&#62;
-            <span class='showHideBtn' showHideTarget='showHide-9'>&#60;h5&#62;<span class='authorable-code'>Sub Title</span>&#60;/h5&#62;</span>
+            <span class='showHideBtn' showHideTarget='showHide-11'>&#60;h5&#62;<span class='authorable-code'>Sub Title</span>&#60;/h5&#62;</span>
         &#60;/div&#62;
     &#60;/div&#62;
-    <span class='showHideBtn' showHideTarget='showHide-10'>&#60;div class="ds2s-body-text"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-12'>&#60;div class="ds2s-body-text"&#62;
         <span class='authorable-code'>Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment. &#60;a href="#"&#62;read more&#60;/a&#62;</span>
     &#60;/div&#62;</span>
     &#60;div class="ds2s-flex-spacer"&#62;&#60;/div&#62;
-    <span class='showHideBtn' showHideTarget='showHide-11'>&#60;div class="ds2s-tag-section"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-13'>&#60;div class="ds2s-tag-section"&#62;
         &#60;a&#62;<span class='authorable-code'>tag name</span>&#60;/a&#62;
         &#60;a&#62;<span class='authorable-code'>another tag</span>&#60;/a&#62;
         &#60;a&#62;<span class='authorable-code'>third tag</span>&#60;/a&#62;
     &#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-12'>&#60;div class="ds2s-button-section"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-14'>&#60;div class="ds2s-button-section"&#62;
         &#60;a class="ds2c-button ds2m-small"&#62;<span class='authorable-code'>Button</span>&#60;/a&#62;
         &#60;a class="ds2c-button ds2m-small"&#62;<span class='authorable-code'>Button</span>&#60;/a&#62;
     &#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-13'>&#60;div class="ds2s-link-section"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-15'>&#60;div class="ds2s-link-section"&#62;
         &#60;a href="<span class='authorable-code'>#</span>"&#62;<span class='authorable-code'>go to link</span>&#60;/a&#62;
     &#60;/div&#62;</span>
 &#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-slider-card' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h4 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label'>expanding?</h4><select><option value=''>[none]</option><option value='ds2m-expanded'>ds2m-expanded</option></select></div></div><div class='component-view-box'><div class="ds2c-slider-card">
-    <img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA=="  id='showHide-14' />
+    <img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA=="  id='showHide-16' />
       <div class="ds2s-content-wrapper">
           <div class="ds2s-titlesection">
               <h4>Card Title</h4>
           </div>
-          <div class="ds2s-body-text" id='showHide-15' >
+          <div class="ds2s-body-text" id='showHide-17' >
               Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment.
           </div>
           <div class="ds2s-flex-spacer"></div>
-          <div class="ds2s-button-section" id='showHide-16' >
+          <div class="ds2s-button-section" id='showHide-18' >
               <a class="ds2c-button ds2m-small">Button</a>
           </div>
-          <div class="ds2s-link-section" id='showHide-17' >
+          <div class="ds2s-link-section" id='showHide-19' >
               <a href="#">go to link</a>
           </div>
       </div>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h4'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-slider-card"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-14'>&#60;img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA==" /&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-16'>&#60;img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA==" /&#62;</span>
       &#60;div class="ds2s-content-wrapper"&#62;
           &#60;div class="ds2s-titlesection"&#62;
               &#60;h4&#62;<span class='authorable-code'>Card Title</span>&#60;/h4&#62;
           &#60;/div&#62;
-          <span class='showHideBtn' showHideTarget='showHide-15'>&#60;div class="ds2s-body-text"&#62;
+          <span class='showHideBtn' showHideTarget='showHide-17'>&#60;div class="ds2s-body-text"&#62;
               <span class='authorable-code'>Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment.</span>
           &#60;/div&#62;</span>
           &#60;div class="ds2s-flex-spacer"&#62;&#60;/div&#62;
-          <span class='showHideBtn' showHideTarget='showHide-16'>&#60;div class="ds2s-button-section"&#62;
+          <span class='showHideBtn' showHideTarget='showHide-18'>&#60;div class="ds2s-button-section"&#62;
               &#60;a class="ds2c-button ds2m-small"&#62;<span class='authorable-code'>Button</span>&#60;/a&#62;
           &#60;/div&#62;</span>
-          <span class='showHideBtn' showHideTarget='showHide-17'>&#60;div class="ds2s-link-section"&#62;
+          <span class='showHideBtn' showHideTarget='showHide-19'>&#60;div class="ds2s-link-section"&#62;
               &#60;a href="<span class='authorable-code'>#</span>"&#62;<span class='authorable-code'>go to link</span>&#60;/a&#62;
           &#60;/div&#62;</span>
       &#60;/div&#62;
