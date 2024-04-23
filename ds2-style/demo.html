@@ -38,10 +38,16 @@
 			border-bottom: 2px var(--ds2v-color-neutral-light) solid;
 		}
 
-		.component-view-box {
-			padding: 1rem;
-			border-bottom: 2px var(--ds2v-color-neutral-light) solid;
-		}
+        .component-view-box {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px var(--ds2v-color-neutral-light) solid;
+        }
+
+        .component-view-box-padded {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
 
 		.html-view-box {
 			padding: 1rem;
@@ -83,12 +89,302 @@
 		<div class="component-selector-box">
 			<h3 class="ds2u-font-heading-h3">Select Component</h3>
 			<select id="component-selector" class="ds2c-select">
-				<option value="autoscroll-banner">autoscroll-banner</option><option value="breadcrumb">breadcrumb</option><option value="button">button</option><option value="columns">columns</option><option value="input">input</option><option value="accordion-switcher">accordion-switcher</option><option value="callout">callout</option><option value="card">card</option><option value="carousel">carousel</option><option value="select">select</option><option value="slider-card">slider-card</option>
+				<option value="accordion-switcher">accordion-switcher</option><option value="autoscroll-banner">autoscroll-banner</option><option value="breadcrumb">breadcrumb</option><option value="button">button</option><option value="columns">columns</option><option value="callout">callout</option><option value="card">card</option><option value="carousel">carousel</option><option value="full-width-panel">full-width-panel</option><option value="input">input</option><option value="select">select</option><option value="slider-card">slider-card</option>
 			</select>
 		</div>
 		
 		<div class="component-viewers">
-			<div id='componentDemoBox-autoscroll-banner' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>fade edges?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-fade-edges-white'>ds2m-fade-edges-white</option><option value='ds2m-fade-edges-black'>ds2m-fade-edges-black</option></select></div></div><div class='component-view-box'><div class="ds2c-autoscroll-banner">
+			<div id='componentDemoBox-accordion-switcher' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>collapse?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-nocollapse'>ds2m-nocollapse</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>reverse?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-reversed'>ds2m-reversed</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-accordion-switcher">
+	<div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+	</div>
+	<div>
+		<section>
+			<div class="content">
+				<div class="header">
+					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-0' >
+					  <g clip-path="url(#clip0_36_1613)">
+						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
+						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
+						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
+						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
+						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
+						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
+						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
+						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
+					  </g>
+					  <defs>
+						<clipPath id="clip0_36_1613">
+						  <rect width="29" height="29" fill="white"/>
+						</clipPath>
+					  </defs>
+					</svg>
+					<h3>title of tab</h3>
+				</div>
+				<div class="content">
+					Here is some text content. I should only be displayed if the first tab is active. Hopefully anyway.
+				</div>
+			</div>
+			<div class="expand">
+				<svg viewBox="0 0 20 20">
+					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
+				</svg>
+			</div>
+		</section>
+		<section>
+			<div class="content">
+				<div class="header">
+					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-1' >
+					  <g clip-path="url(#clip0_36_1613)">
+						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
+						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
+						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
+						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
+						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
+						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
+						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
+						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
+					  </g>
+					  <defs>
+						<clipPath id="clip0_36_1613">
+						  <rect width="29" height="29" fill="white"/>
+						</clipPath>
+					  </defs>
+					</svg>
+					<h3>title of tab</h3>
+				</div>
+				<div class="content">
+					2nd text section: kind of the same as the third... LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.
+				</div>
+			</div>
+			<div class="expand">
+				<svg viewBox="0 0 20 20">
+					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
+				</svg>
+			</div>
+		</section>
+		<section>
+			<div class="content">
+				<div class="header">
+					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-2' >
+					  <g clip-path="url(#clip0_36_1613)">
+						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
+						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
+						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
+						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
+						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
+						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
+						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
+						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
+					  </g>
+					  <defs>
+						<clipPath id="clip0_36_1613">
+						  <rect width="29" height="29" fill="white"/>
+						</clipPath>
+					  </defs>
+					</svg>
+					<h3>title of tab</h3>
+				</div>
+				<div class="content">
+					LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.
+				</div>
+			</div>
+			<div class="expand">
+				<svg viewBox="0 0 20 20">
+					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
+				</svg>
+			</div>
+		</section>
+		<section>
+			<div class="content">
+				<div class="header">
+					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-3' >
+					  <g clip-path="url(#clip0_36_1613)">
+						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
+						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
+						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
+						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
+						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
+						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
+						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
+						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
+					  </g>
+					  <defs>
+						<clipPath id="clip0_36_1613">
+						  <rect width="29" height="29" fill="white"/>
+						</clipPath>
+					  </defs>
+					</svg>
+					<h3>title of tab</h3>
+				</div>
+				<div class="content">
+					LED work lights automatically illuminate the  undercar work area when the vehicle is lifted. THis is a slightly longer section of text by the way.
+				</div>
+			</div>
+			<div class="expand">
+				<svg viewBox="0 0 20 20">
+					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
+				</svg>
+			</div>
+		</section>
+	</div>
+	<aside>
+		<div>
+			<img src="https://globalassets.hunter.com/images/assets/history-2020-2023-hawkeye-xl.jpg/Zz1iYTFhOWM3YTZjNjIxMWVlOGVlOGJlMmYzMzQ4ZWM1YQ==?epieditmode=false" />
+			<img src="https://globalassets.hunter.com/images/assets/history-2020-2023-maverick.jpg/Zz1iYTJlNzZkMjZjNjIxMWVlOTNhODkyMmEwNGEzN2YwZQ==?epieditmode=false" />
+			<img src="https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-adaslink.jpg" />
+			<img src="https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-quickcheckcommercial.jpg" />
+		</div>
+	</aside>
+</div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-accordion-switcher"&#62;
+	&#60;div&#62;
+		&#60;div&#62;1&#60;/div&#62;
+		&#60;div&#62;2&#60;/div&#62;
+		&#60;div&#62;3&#60;/div&#62;
+		&#60;div&#62;4&#60;/div&#62;
+	&#60;/div&#62;
+	&#60;div&#62;
+		&#60;section&#62;
+			&#60;div class="content"&#62;
+				&#60;div class="header"&#62;
+					<span class='showHideBtn' showHideTarget='showHide-0'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
+					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
+						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
+						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
+						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
+						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
+						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
+						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
+						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
+						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
+					  &#60;/g&#62;
+					  &#60;defs&#62;
+						&#60;clipPath id="clip0_36_1613"&#62;
+						  &#60;rect width="29" height="29" fill="white"/&#62;
+						&#60;/clipPath&#62;
+					  &#60;/defs&#62;
+					&#60;/svg&#62;</span></span>
+					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
+				&#60;/div&#62;
+				&#60;div class="content"&#62;
+					<span class='authorable-code'>Here is some text content. I should only be displayed if the first tab is active. Hopefully anyway.</span>
+				&#60;/div&#62;
+			&#60;/div&#62;
+			&#60;div class="expand"&#62;
+				&#60;svg viewBox="0 0 20 20"&#62;
+					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
+				&#60;/svg&#62;
+			&#60;/div&#62;
+		&#60;/section&#62;
+		&#60;section&#62;
+			&#60;div class="content"&#62;
+				&#60;div class="header"&#62;
+					<span class='showHideBtn' showHideTarget='showHide-1'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
+					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
+						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
+						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
+						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
+						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
+						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
+						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
+						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
+						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
+					  &#60;/g&#62;
+					  &#60;defs&#62;
+						&#60;clipPath id="clip0_36_1613"&#62;
+						  &#60;rect width="29" height="29" fill="white"/&#62;
+						&#60;/clipPath&#62;
+					  &#60;/defs&#62;
+					&#60;/svg&#62;</span></span>
+					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
+				&#60;/div&#62;
+				&#60;div class="content"&#62;
+					<span class='authorable-code'>2nd text section: kind of the same as the third... LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.</span>
+				&#60;/div&#62;
+			&#60;/div&#62;
+			&#60;div class="expand"&#62;
+				&#60;svg viewBox="0 0 20 20"&#62;
+					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
+				&#60;/svg&#62;
+			&#60;/div&#62;
+		&#60;/section&#62;
+		&#60;section&#62;
+			&#60;div class="content"&#62;
+				&#60;div class="header"&#62;
+					<span class='showHideBtn' showHideTarget='showHide-2'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
+					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
+						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
+						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
+						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
+						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
+						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
+						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
+						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
+						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
+					  &#60;/g&#62;
+					  &#60;defs&#62;
+						&#60;clipPath id="clip0_36_1613"&#62;
+						  &#60;rect width="29" height="29" fill="white"/&#62;
+						&#60;/clipPath&#62;
+					  &#60;/defs&#62;
+					&#60;/svg&#62;</span></span>
+					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
+				&#60;/div&#62;
+				&#60;div class="content"&#62;
+					<span class='authorable-code'>LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.</span>
+				&#60;/div&#62;
+			&#60;/div&#62;
+			&#60;div class="expand"&#62;
+				&#60;svg viewBox="0 0 20 20"&#62;
+					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
+				&#60;/svg&#62;
+			&#60;/div&#62;
+		&#60;/section&#62;
+		&#60;section&#62;
+			&#60;div class="content"&#62;
+				&#60;div class="header"&#62;
+					<span class='showHideBtn' showHideTarget='showHide-3'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
+					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
+						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
+						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
+						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
+						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
+						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
+						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
+						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
+						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
+					  &#60;/g&#62;
+					  &#60;defs&#62;
+						&#60;clipPath id="clip0_36_1613"&#62;
+						  &#60;rect width="29" height="29" fill="white"/&#62;
+						&#60;/clipPath&#62;
+					  &#60;/defs&#62;
+					&#60;/svg&#62;</span></span>
+					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
+				&#60;/div&#62;
+				&#60;div class="content"&#62;
+					<span class='authorable-code'>LED work lights automatically illuminate the  undercar work area when the vehicle is lifted. THis is a slightly longer section of text by the way.</span>
+				&#60;/div&#62;
+			&#60;/div&#62;
+			&#60;div class="expand"&#62;
+				&#60;svg viewBox="0 0 20 20"&#62;
+					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
+				&#60;/svg&#62;
+			&#60;/div&#62;
+		&#60;/section&#62;
+	&#60;/div&#62;
+	&#60;aside&#62;
+		&#60;div&#62;
+			&#60;img src="<span class='authorable-code'>https://globalassets.hunter.com/images/assets/history-2020-2023-hawkeye-xl.jpg/Zz1iYTFhOWM3YTZjNjIxMWVlOGVlOGJlMmYzMzQ4ZWM1YQ==?epieditmode=false</span>" /&#62;
+			&#60;img src="<span class='authorable-code'>https://globalassets.hunter.com/images/assets/history-2020-2023-maverick.jpg/Zz1iYTJlNzZkMjZjNjIxMWVlOTNhODkyMmEwNGEzN2YwZQ==?epieditmode=false</span>" /&#62;
+			&#60;img src="<span class='authorable-code'>https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-adaslink.jpg</span>" /&#62;
+			&#60;img src="<span class='authorable-code'>https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-quickcheckcommercial.jpg</span>" /&#62;
+		&#60;/div&#62;
+	&#60;/aside&#62;
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-autoscroll-banner' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>fade edges?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-fade-edges-white'>ds2m-fade-edges-white</option><option value='ds2m-fade-edges-black'>ds2m-fade-edges-black</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-autoscroll-banner">
     <div class="ds2s-scrollbox-wrapper">
         <div class="ds2s-scrollbox">
             <div class="ds2s-autoscroll-flex">
@@ -156,376 +452,62 @@
             &#60;/div&#62;
         &#60;/div&#62;
     &#60;/div&#62;
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-breadcrumb' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option></select></div></div><div class='component-view-box'><div class="ds2c-breadcrumb">
-    <div class="ds2s-breadcrumb-item"  id='showHide-0' ><a>particular tire changer</a></div>
-    <div class="ds2s-breadcrumb-item"  id='showHide-1' ><a href="#">tire changers</a></div>
-    <div class="ds2s-breadcrumb-item"  id='showHide-2' ><a href="#">products</a></div>
-    <div class="ds2s-breadcrumb-item"  id='showHide-3' ><a href="#">home</a></div>
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-breadcrumb' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-breadcrumb">
+    <div class="ds2s-breadcrumb-item"  id='showHide-4' ><a>particular tire changer</a></div>
+    <div class="ds2s-breadcrumb-item"  id='showHide-5' ><a href="#">tire changers</a></div>
+    <div class="ds2s-breadcrumb-item"  id='showHide-6' ><a href="#">products</a></div>
+    <div class="ds2s-breadcrumb-item"  id='showHide-7' ><a href="#">home</a></div>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-breadcrumb"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-0'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a&#62;particular tire changer&#60;/a&#62;&#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-1'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a href="#"&#62;tire changers&#60;/a&#62;&#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-2'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a href="#"&#62;products&#60;/a&#62;&#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-3'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a href="#"&#62;home&#60;/a&#62;&#60;/div&#62;</span>
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-button' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>size</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-small'>ds2m-small</option><option value='ds2m-large'>ds2m-large</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>style</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-light'>ds2m-light</option><option value='ds2m-secondary-dark'>ds2m-secondary-dark</option><option value='ds2m-secondary-light'>ds2m-secondary-light</option><option value='ds2m-ghost-primary'>ds2m-ghost-primary</option><option value='ds2m-ghost-dark'>ds2m-ghost-dark</option><option value='ds2m-ghost-light'>ds2m-ghost-light</option><option value='ds2m-neutral-translucent'>ds2m-neutral-translucent</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>loading?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-loading'>ds2m-loading</option></select></div></div><div class='component-view-box'><button class="ds2c-button">button</button></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;button class="ds2c-button"&#62;<span class='authorable-code'>button</span>&#60;/button&#62;</pre></div></div></div><div id='componentDemoBox-columns' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3></div><div class='component-view-box'><div class="ds2c-columns">
+    <span class='showHideBtn' showHideTarget='showHide-4'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a&#62;particular tire changer&#60;/a&#62;&#60;/div&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-5'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a href="#"&#62;tire changers&#60;/a&#62;&#60;/div&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-6'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a href="#"&#62;products&#60;/a&#62;&#60;/div&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-7'>&#60;div class="ds2s-breadcrumb-item" &#62;&#60;a href="#"&#62;home&#60;/a&#62;&#60;/div&#62;</span>
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-button' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>size</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-small'>ds2m-small</option><option value='ds2m-large'>ds2m-large</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>style</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-light'>ds2m-light</option><option value='ds2m-secondary-dark'>ds2m-secondary-dark</option><option value='ds2m-secondary-light'>ds2m-secondary-light</option><option value='ds2m-ghost-primary'>ds2m-ghost-primary</option><option value='ds2m-ghost-dark'>ds2m-ghost-dark</option><option value='ds2m-ghost-light'>ds2m-ghost-light</option><option value='ds2m-neutral-translucent'>ds2m-neutral-translucent</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>loading?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-loading'>ds2m-loading</option></select></div></div><div class='component-view-box component-view-box-padded'><button class="ds2c-button">button</button></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;button class="ds2c-button"&#62;<span class='authorable-code'>button</span>&#60;/button&#62;</pre></div></div></div><div id='componentDemoBox-columns' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3></div><div class='component-view-box component-view-box-padded'><div class="ds2c-columns">
     <div class="ds2s-column">
-        <div class="ds2s-column-image" id='showHide-4' ><img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /></div>
-        <h4 class="ds2s-column-title" id='showHide-5' >300+</h4>
-        <h5 class="ds2s-column-subtitle" id='showHide-6' >Patented Inventions</h5>
-        <p class="ds2s-column-text" id='showHide-7' >Always on the cutting edge of tech</p>
-        <a class="ds2s-column-link" href="#" id='showHide-8' >Title of Column</a>
+        <div class="ds2s-column-image" id='showHide-8' ><img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /></div>
+        <h4 class="ds2s-column-title" id='showHide-9' >300+</h4>
+        <h5 class="ds2s-column-subtitle" id='showHide-10' >Patented Inventions</h5>
+        <p class="ds2s-column-text" id='showHide-11' >Always on the cutting edge of tech</p>
+        <a class="ds2s-column-link" href="#" id='showHide-12' >Title of Column</a>
     </div>
     <div class="ds2s-column">
-        <div class="ds2s-column-image" id='showHide-9' ><img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /></div>
-        <h4 class="ds2s-column-title" id='showHide-10' >300+</h4>
-        <h5 class="ds2s-column-subtitle" id='showHide-11' >Patented Inventions</h5>
-        <p class="ds2s-column-text" id='showHide-12' >Always on the cutting edge of tech</p>
-        <a class="ds2s-column-link" href="#" id='showHide-13' >Title of Column</a>
+        <div class="ds2s-column-image" id='showHide-13' ><img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /></div>
+        <h4 class="ds2s-column-title" id='showHide-14' >300+</h4>
+        <h5 class="ds2s-column-subtitle" id='showHide-15' >Patented Inventions</h5>
+        <p class="ds2s-column-text" id='showHide-16' >Always on the cutting edge of tech</p>
+        <a class="ds2s-column-link" href="#" id='showHide-17' >Title of Column</a>
     </div>
     <div class="ds2s-column">
-        <div class="ds2s-column-image" id='showHide-14' ><img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /></div>
-        <h4 class="ds2s-column-title" id='showHide-15' >300+</h4>
-        <h5 class="ds2s-column-subtitle" id='showHide-16' >Patented Inventions</h5>
-        <p class="ds2s-column-text" id='showHide-17' >Always on the cutting edge of tech</p>
-        <a class="ds2s-column-link" href="#" id='showHide-18' >Title of Column</a>
+        <div class="ds2s-column-image" id='showHide-18' ><img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /></div>
+        <h4 class="ds2s-column-title" id='showHide-19' >300+</h4>
+        <h5 class="ds2s-column-subtitle" id='showHide-20' >Patented Inventions</h5>
+        <p class="ds2s-column-text" id='showHide-21' >Always on the cutting edge of tech</p>
+        <a class="ds2s-column-link" href="#" id='showHide-22' >Title of Column</a>
     </div>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-columns"&#62;
     &#60;div class="ds2s-column"&#62;
-        <span class='showHideBtn' showHideTarget='showHide-4'>&#60;div class="ds2s-column-image"&#62;&#60;img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /&#62;&#60;/div&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-5'>&#60;h4 class="ds2s-column-title"&#62;300+&#60;/h4&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-6'>&#60;h5 class="ds2s-column-subtitle"&#62;Patented Inventions&#60;/h5&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-7'>&#60;p class="ds2s-column-text"&#62;Always on the cutting edge of tech&#60;/p&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-8'>&#60;a class="ds2s-column-link" href="#"&#62;Title of Column&#60;/a&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-8'>&#60;div class="ds2s-column-image"&#62;&#60;img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /&#62;&#60;/div&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-9'>&#60;h4 class="ds2s-column-title"&#62;300+&#60;/h4&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-10'>&#60;h5 class="ds2s-column-subtitle"&#62;Patented Inventions&#60;/h5&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-11'>&#60;p class="ds2s-column-text"&#62;Always on the cutting edge of tech&#60;/p&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-12'>&#60;a class="ds2s-column-link" href="#"&#62;Title of Column&#60;/a&#62;</span>
     &#60;/div&#62;
     &#60;div class="ds2s-column"&#62;
-        <span class='showHideBtn' showHideTarget='showHide-9'>&#60;div class="ds2s-column-image"&#62;&#60;img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /&#62;&#60;/div&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-10'>&#60;h4 class="ds2s-column-title"&#62;300+&#60;/h4&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-11'>&#60;h5 class="ds2s-column-subtitle"&#62;Patented Inventions&#60;/h5&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-12'>&#60;p class="ds2s-column-text"&#62;Always on the cutting edge of tech&#60;/p&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-13'>&#60;a class="ds2s-column-link" href="#"&#62;Title of Column&#60;/a&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-13'>&#60;div class="ds2s-column-image"&#62;&#60;img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /&#62;&#60;/div&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-14'>&#60;h4 class="ds2s-column-title"&#62;300+&#60;/h4&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-15'>&#60;h5 class="ds2s-column-subtitle"&#62;Patented Inventions&#60;/h5&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-16'>&#60;p class="ds2s-column-text"&#62;Always on the cutting edge of tech&#60;/p&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-17'>&#60;a class="ds2s-column-link" href="#"&#62;Title of Column&#60;/a&#62;</span>
     &#60;/div&#62;
     &#60;div class="ds2s-column"&#62;
-        <span class='showHideBtn' showHideTarget='showHide-14'>&#60;div class="ds2s-column-image"&#62;&#60;img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /&#62;&#60;/div&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-15'>&#60;h4 class="ds2s-column-title"&#62;300+&#60;/h4&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-16'>&#60;h5 class="ds2s-column-subtitle"&#62;Patented Inventions&#60;/h5&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-17'>&#60;p class="ds2s-column-text"&#62;Always on the cutting edge of tech&#60;/p&#62;</span>
-        <span class='showHideBtn' showHideTarget='showHide-18'>&#60;a class="ds2s-column-link" href="#"&#62;Title of Column&#60;/a&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-18'>&#60;div class="ds2s-column-image"&#62;&#60;img src="https://globalassets.hunter.com/images/assets/icon-product-wheel-balancer.svg/Zz05ZGVjZDg5NjZhN2ExMWVkODYzZjdhZWYzODFmNWUwNw==" /&#62;&#60;/div&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-19'>&#60;h4 class="ds2s-column-title"&#62;300+&#60;/h4&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-20'>&#60;h5 class="ds2s-column-subtitle"&#62;Patented Inventions&#60;/h5&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-21'>&#60;p class="ds2s-column-text"&#62;Always on the cutting edge of tech&#60;/p&#62;</span>
+        <span class='showHideBtn' showHideTarget='showHide-22'>&#60;a class="ds2s-column-link" href="#"&#62;Title of Column&#60;/a&#62;</span>
     &#60;/div&#62;
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-input' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>validation state</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-valid'>ds2m-valid</option><option value='ds2m-error'>ds2m-error</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>disabled?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-disabled'>ds2m-disabled</option></select></div></div><div class='component-view-box'><div class="ds2c-input">
-	<div class="ds2s-icon-container" id='showHide-19' >
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
-			<path d="M20.3 13.9C19.42 13.78 18.54 13.57 17.71 13.25C16.62 12.84 15.38 13.1 14.54 13.93L13.82 14.65C11.98 13.47 10.41 11.91 9.23004 10.06L9.95004 9.34C10.77 8.51 11.04 7.27 10.63 6.18C10.32 5.35 10.1 4.47 9.98004 3.58C9.78004 2.1 8.50004 1 7.03004 1C7.02004 1 7.01004 1 7.00004 1H4.00004C3.91004 1 3.82004 1 3.73004 1.01C2.93004 1.08 2.21004 1.46 1.70004 2.08C1.19004 2.7 0.940044 3.47 1.02004 4.29C1.36004 7.52 2.48004 10.67 4.24004 13.39C5.84004 15.91 8.02004 18.09 10.54 19.69C13.25 21.45 16.39 22.57 19.62 22.92C19.71 22.93 19.81 22.93 19.91 22.93C21.56 22.92 22.9 21.57 22.9 19.92V16.93C22.92 15.41 21.81 14.11 20.3 13.9ZM20.89 19.92C20.89 20.47 20.45 20.92 19.82 20.92C16.91 20.6 14.08 19.6 11.62 18C9.34004 16.55 7.37004 14.58 5.92004 12.3C4.32004 9.84 3.31004 7 3.00004 4.09C2.95004 3.54 3.36004 3.05 4.00004 3H7.01004H7.02004C7.52004 3 7.94004 3.37 8.01004 3.85C8.14004 4.88 8.40004 5.9 8.76004 6.88C8.90004 7.25 8.81004 7.66 8.54004 7.93L6.73004 9.74L7.11004 10.4C8.62004 13.06 10.83 15.26 13.49 16.78L14.15 17.16L15.96 15.35C16.24 15.08 16.65 14.99 17.02 15.13C18 15.49 19.02 15.75 20.04 15.88C20.54 15.95 20.91 16.39 20.9 16.9L20.89 19.92Z"/>
-		</svg>
-	</div>
-	<input placeholder="weight">
-	<span id='showHide-20' >(kg)</span>
-	<div class="ds2s-tooltips">
-		<div class="ds2s-tooltip-text">this is where you enter some data... should be obvious</div>
-		<div class="ds2s-tooltip-error">that was so invalid of you</div>
-	</div>
-</div>	</div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-input"&#62;
-	<span class='showHideBtn' showHideTarget='showHide-19'>&#60;div class="ds2s-icon-container"&#62;
-		<span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" &#62;
-			&#60;path d="M20.3 13.9C19.42 13.78 18.54 13.57 17.71 13.25C16.62 12.84 15.38 13.1 14.54 13.93L13.82 14.65C11.98 13.47 10.41 11.91 9.23004 10.06L9.95004 9.34C10.77 8.51 11.04 7.27 10.63 6.18C10.32 5.35 10.1 4.47 9.98004 3.58C9.78004 2.1 8.50004 1 7.03004 1C7.02004 1 7.01004 1 7.00004 1H4.00004C3.91004 1 3.82004 1 3.73004 1.01C2.93004 1.08 2.21004 1.46 1.70004 2.08C1.19004 2.7 0.940044 3.47 1.02004 4.29C1.36004 7.52 2.48004 10.67 4.24004 13.39C5.84004 15.91 8.02004 18.09 10.54 19.69C13.25 21.45 16.39 22.57 19.62 22.92C19.71 22.93 19.81 22.93 19.91 22.93C21.56 22.92 22.9 21.57 22.9 19.92V16.93C22.92 15.41 21.81 14.11 20.3 13.9ZM20.89 19.92C20.89 20.47 20.45 20.92 19.82 20.92C16.91 20.6 14.08 19.6 11.62 18C9.34004 16.55 7.37004 14.58 5.92004 12.3C4.32004 9.84 3.31004 7 3.00004 4.09C2.95004 3.54 3.36004 3.05 4.00004 3H7.01004H7.02004C7.52004 3 7.94004 3.37 8.01004 3.85C8.14004 4.88 8.40004 5.9 8.76004 6.88C8.90004 7.25 8.81004 7.66 8.54004 7.93L6.73004 9.74L7.11004 10.4C8.62004 13.06 10.83 15.26 13.49 16.78L14.15 17.16L15.96 15.35C16.24 15.08 16.65 14.99 17.02 15.13C18 15.49 19.02 15.75 20.04 15.88C20.54 15.95 20.91 16.39 20.9 16.9L20.89 19.92Z"/&#62;
-		&#60;/svg&#62;</span>
-	&#60;/div&#62;</span>
-	&#60;input placeholder="<span class='authorable-code'>weight</span>"&#62;
-	<span class='showHideBtn' showHideTarget='showHide-20'>&#60;span&#62;<span class='authorable-code'>(kg)</span>&#60;/span&#62;</span>
-	&#60;div class="ds2s-tooltips"&#62;
-		&#60;div class="ds2s-tooltip-text"&#62;<span class='authorable-code'>this is where you enter some data... should be obvious</span>&#60;/div&#62;
-		&#60;div class="ds2s-tooltip-error"&#62;<span class='authorable-code'>that was so invalid of you</span>&#60;/div&#62;
-	&#60;/div&#62;
-&#60;/div&#62;	</pre></div></div></div><div id='componentDemoBox-accordion-switcher' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>collapse?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-nocollapse'>ds2m-nocollapse</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>reverse?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-reversed'>ds2m-reversed</option></select></div></div><div class='component-view-box'><div class="ds2c-accordion-switcher">
-	<div>
-		<div>1</div>
-		<div>2</div>
-		<div>3</div>
-		<div>4</div>
-	</div>
-	<div>
-		<section>
-			<div class="content">
-				<div class="header">
-					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-21' >
-					  <g clip-path="url(#clip0_36_1613)">
-						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
-						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
-						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
-						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
-						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
-						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
-						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
-						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
-					  </g>
-					  <defs>
-						<clipPath id="clip0_36_1613">
-						  <rect width="29" height="29" fill="white"/>
-						</clipPath>
-					  </defs>
-					</svg>
-					<h3>title of tab</h3>
-				</div>
-				<div class="content">
-					Here is some text content. I should only be displayed if the first tab is active. Hopefully anyway.
-				</div>
-			</div>
-			<div class="expand">
-				<svg viewBox="0 0 20 20">
-					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
-				</svg>
-			</div>
-		</section>
-		<section>
-			<div class="content">
-				<div class="header">
-					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-22' >
-					  <g clip-path="url(#clip0_36_1613)">
-						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
-						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
-						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
-						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
-						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
-						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
-						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
-						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
-					  </g>
-					  <defs>
-						<clipPath id="clip0_36_1613">
-						  <rect width="29" height="29" fill="white"/>
-						</clipPath>
-					  </defs>
-					</svg>
-					<h3>title of tab</h3>
-				</div>
-				<div class="content">
-					2nd text section: kind of the same as the third... LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.
-				</div>
-			</div>
-			<div class="expand">
-				<svg viewBox="0 0 20 20">
-					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
-				</svg>
-			</div>
-		</section>
-		<section>
-			<div class="content">
-				<div class="header">
-					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-23' >
-					  <g clip-path="url(#clip0_36_1613)">
-						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
-						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
-						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
-						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
-						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
-						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
-						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
-						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
-					  </g>
-					  <defs>
-						<clipPath id="clip0_36_1613">
-						  <rect width="29" height="29" fill="white"/>
-						</clipPath>
-					  </defs>
-					</svg>
-					<h3>title of tab</h3>
-				</div>
-				<div class="content">
-					LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.
-				</div>
-			</div>
-			<div class="expand">
-				<svg viewBox="0 0 20 20">
-					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
-				</svg>
-			</div>
-		</section>
-		<section>
-			<div class="content">
-				<div class="header">
-					<svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" id='showHide-24' >
-					  <g clip-path="url(#clip0_36_1613)">
-						<path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" />
-						<path d="M15.7087 0H13.292V4.83333H15.7087V0Z" />
-						<path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" />
-						<path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" />
-						<path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/>
-						<path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/>
-						<path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" />
-						<path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/>
-					  </g>
-					  <defs>
-						<clipPath id="clip0_36_1613">
-						  <rect width="29" height="29" fill="white"/>
-						</clipPath>
-					  </defs>
-					</svg>
-					<h3>title of tab</h3>
-				</div>
-				<div class="content">
-					LED work lights automatically illuminate the  undercar work area when the vehicle is lifted. THis is a slightly longer section of text by the way.
-				</div>
-			</div>
-			<div class="expand">
-				<svg viewBox="0 0 20 20">
-					<path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/>
-				</svg>
-			</div>
-		</section>
-	</div>
-	<aside>
-		<div>
-			<img src="https://globalassets.hunter.com/images/assets/history-2020-2023-hawkeye-xl.jpg/Zz1iYTFhOWM3YTZjNjIxMWVlOGVlOGJlMmYzMzQ4ZWM1YQ==?epieditmode=false" />
-			<img src="https://globalassets.hunter.com/images/assets/history-2020-2023-maverick.jpg/Zz1iYTJlNzZkMjZjNjIxMWVlOTNhODkyMmEwNGEzN2YwZQ==?epieditmode=false" />
-			<img src="https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-adaslink.jpg" />
-			<img src="https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-quickcheckcommercial.jpg" />
-		</div>
-	</aside>
-</div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-accordion-switcher"&#62;
-	&#60;div&#62;
-		&#60;div&#62;1&#60;/div&#62;
-		&#60;div&#62;2&#60;/div&#62;
-		&#60;div&#62;3&#60;/div&#62;
-		&#60;div&#62;4&#60;/div&#62;
-	&#60;/div&#62;
-	&#60;div&#62;
-		&#60;section&#62;
-			&#60;div class="content"&#62;
-				&#60;div class="header"&#62;
-					<span class='showHideBtn' showHideTarget='showHide-21'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
-					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
-						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
-						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
-						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
-						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
-						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
-						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
-						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
-						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
-					  &#60;/g&#62;
-					  &#60;defs&#62;
-						&#60;clipPath id="clip0_36_1613"&#62;
-						  &#60;rect width="29" height="29" fill="white"/&#62;
-						&#60;/clipPath&#62;
-					  &#60;/defs&#62;
-					&#60;/svg&#62;</span></span>
-					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
-				&#60;/div&#62;
-				&#60;div class="content"&#62;
-					<span class='authorable-code'>Here is some text content. I should only be displayed if the first tab is active. Hopefully anyway.</span>
-				&#60;/div&#62;
-			&#60;/div&#62;
-			&#60;div class="expand"&#62;
-				&#60;svg viewBox="0 0 20 20"&#62;
-					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
-				&#60;/svg&#62;
-			&#60;/div&#62;
-		&#60;/section&#62;
-		&#60;section&#62;
-			&#60;div class="content"&#62;
-				&#60;div class="header"&#62;
-					<span class='showHideBtn' showHideTarget='showHide-22'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
-					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
-						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
-						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
-						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
-						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
-						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
-						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
-						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
-						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
-					  &#60;/g&#62;
-					  &#60;defs&#62;
-						&#60;clipPath id="clip0_36_1613"&#62;
-						  &#60;rect width="29" height="29" fill="white"/&#62;
-						&#60;/clipPath&#62;
-					  &#60;/defs&#62;
-					&#60;/svg&#62;</span></span>
-					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
-				&#60;/div&#62;
-				&#60;div class="content"&#62;
-					<span class='authorable-code'>2nd text section: kind of the same as the third... LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.</span>
-				&#60;/div&#62;
-			&#60;/div&#62;
-			&#60;div class="expand"&#62;
-				&#60;svg viewBox="0 0 20 20"&#62;
-					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
-				&#60;/svg&#62;
-			&#60;/div&#62;
-		&#60;/section&#62;
-		&#60;section&#62;
-			&#60;div class="content"&#62;
-				&#60;div class="header"&#62;
-					<span class='showHideBtn' showHideTarget='showHide-23'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
-					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
-						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
-						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
-						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
-						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
-						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
-						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
-						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
-						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
-					  &#60;/g&#62;
-					  &#60;defs&#62;
-						&#60;clipPath id="clip0_36_1613"&#62;
-						  &#60;rect width="29" height="29" fill="white"/&#62;
-						&#60;/clipPath&#62;
-					  &#60;/defs&#62;
-					&#60;/svg&#62;</span></span>
-					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
-				&#60;/div&#62;
-				&#60;div class="content"&#62;
-					<span class='authorable-code'>LED work lights automatically illuminate the  undercar work area when the vehicle is lifted.</span>
-				&#60;/div&#62;
-			&#60;/div&#62;
-			&#60;div class="expand"&#62;
-				&#60;svg viewBox="0 0 20 20"&#62;
-					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
-				&#60;/svg&#62;
-			&#60;/div&#62;
-		&#60;/section&#62;
-		&#60;section&#62;
-			&#60;div class="content"&#62;
-				&#60;div class="header"&#62;
-					<span class='showHideBtn' showHideTarget='showHide-24'><span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"&#62;
-					  &#60;g clip-path="url(#clip0_36_1613)"&#62;
-						&#60;path d="M19.0915 8.82089C17.3999 7.49173 15.104 6.88756 12.929 7.37089C10.1499 7.97506 7.97485 10.1501 7.37068 12.9292C6.88735 14.9834 7.37068 17.1584 8.69985 18.8501L8.82068 18.9709L9.42485 19.5751C10.3915 20.5417 10.8749 21.7501 10.8749 23.0792V27.7917C10.8749 28.5167 11.3582 29.0001 12.0832 29.0001H16.9165C17.6415 29.0001 18.1249 28.5167 18.1249 27.7917V23.0792C18.1249 21.7501 18.6082 20.5417 19.5749 19.6959L20.179 19.0917L20.2999 18.9709C21.2665 17.7626 21.7499 16.1917 21.7499 14.6209C21.7499 12.3251 20.7832 10.2709 19.0915 8.82089ZM13.2915 26.5834V24.1667H15.7082V26.5834H13.2915ZM18.3665 17.2792L17.7624 17.8834C16.6749 18.9709 16.0707 20.3001 15.7082 21.7501H13.0499C12.8082 20.3001 12.0832 18.9709 10.9957 17.8834L10.3915 17.2792C9.54568 16.1917 9.30402 14.7417 9.54568 13.4126C9.90818 11.6001 11.3582 10.1501 13.1707 9.78756C14.6207 9.42506 16.0707 9.78756 17.279 10.7542C18.729 11.7209 19.3332 13.0501 19.3332 14.5001C19.3332 15.5876 18.9707 16.5542 18.3665 17.2792Z" /&#62;
-						&#60;path d="M15.7087 0H13.292V4.83333H15.7087V0Z" /&#62;
-						&#60;path d="M29.0003 13.2917H24.167V15.7084H29.0003V13.2917Z" /&#62;
-						&#60;path d="M4.83333 13.2917H0V15.7084H4.83333V13.2917Z" /&#62;
-						&#60;path d="M4.49789 2.78873L2.78906 4.49756L6.37759 8.08609L8.08642 6.37727L4.49789 2.78873Z"/&#62;
-						&#60;path d="M24.5026 2.78891L20.9141 6.37744L22.6229 8.08627L26.2114 4.49773L24.5026 2.78891Z"/&#62;
-						&#60;path d="M6.37759 20.9137L2.78906 24.5022L4.49789 26.211L8.08642 22.6225L6.37759 20.9137Z" /&#62;
-						&#60;path d="M22.6219 20.9137L20.9131 22.6226L24.5016 26.2111L26.2104 24.5023L22.6219 20.9137Z"/&#62;
-					  &#60;/g&#62;
-					  &#60;defs&#62;
-						&#60;clipPath id="clip0_36_1613"&#62;
-						  &#60;rect width="29" height="29" fill="white"/&#62;
-						&#60;/clipPath&#62;
-					  &#60;/defs&#62;
-					&#60;/svg&#62;</span></span>
-					&#60;h3&#62;<span class='authorable-code'>title of tab</span>&#60;/h3&#62;
-				&#60;/div&#62;
-				&#60;div class="content"&#62;
-					<span class='authorable-code'>LED work lights automatically illuminate the  undercar work area when the vehicle is lifted. THis is a slightly longer section of text by the way.</span>
-				&#60;/div&#62;
-			&#60;/div&#62;
-			&#60;div class="expand"&#62;
-				&#60;svg viewBox="0 0 20 20"&#62;
-					&#60;path d="M20 8.75H11.25V0H8.75V8.75H0V11.25H8.75V20H11.25V11.25H20V8.75Z"/&#62;
-				&#60;/svg&#62;
-			&#60;/div&#62;
-		&#60;/section&#62;
-	&#60;/div&#62;
-	&#60;aside&#62;
-		&#60;div&#62;
-			&#60;img src="<span class='authorable-code'>https://globalassets.hunter.com/images/assets/history-2020-2023-hawkeye-xl.jpg/Zz1iYTFhOWM3YTZjNjIxMWVlOGVlOGJlMmYzMzQ4ZWM1YQ==?epieditmode=false</span>" /&#62;
-			&#60;img src="<span class='authorable-code'>https://globalassets.hunter.com/images/assets/history-2020-2023-maverick.jpg/Zz1iYTJlNzZkMjZjNjIxMWVlOTNhODkyMmEwNGEzN2YwZQ==?epieditmode=false</span>" /&#62;
-			&#60;img src="<span class='authorable-code'>https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-adaslink.jpg</span>" /&#62;
-			&#60;img src="<span class='authorable-code'>https://www.hunter.com/globalassets/hunter/about/history/2020s/history-2020s-2021-quickcheckcommercial.jpg</span>" /&#62;
-		&#60;/div&#62;
-	&#60;/aside&#62;
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-callout' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-neutral-light'>ds2m-neutral-light</option><option value='ds2m-neutral'>ds2m-neutral</option><option value='ds2m-dark'>ds2m-dark</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>style</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-slant'>ds2m-slant</option><option value='ds2m-os-shadow'>ds2m-os-shadow</option></select></div></div><div class='component-view-box'><div class="ds2c-callout">
-    <div class="ds2s-icon-box" id='showHide-25' >
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-callout' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-neutral-light'>ds2m-neutral-light</option><option value='ds2m-neutral'>ds2m-neutral</option><option value='ds2m-dark'>ds2m-dark</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>style</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-slant'>ds2m-slant</option><option value='ds2m-os-shadow'>ds2m-os-shadow</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-callout">
+    <div class="ds2s-icon-box" id='showHide-23' >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"><g clip-path="url(#clip0_388_832)"><path d="M34.5 3H28.5H19.5V0H16.5V3H7.5H1.5C0.6 3 0 3.6 0 4.5V9C0 9.9 0.6 10.5 1.5 10.5H4.5C4.95 10.5 5.4 10.2 5.7 9.9L8.25 6H16.5V10.5H13.5C12.6 10.5 12 11.1 12 12V18H10.5C9.6 18 9 18.6 9 19.5V33C9 33.9 9.6 34.5 10.5 34.5V36H13.5V34.5H22.5V36H25.5V34.5C26.4 34.5 27 33.9 27 33V19.5C27 18.6 26.4 18 25.5 18H24V12C24 11.1 23.4 10.5 22.5 10.5H19.5V6H27.75L30.3 9.9C30.6 10.2 31.05 10.5 31.5 10.5H34.5C35.4 10.5 36 9.9 36 9V4.5C36 3.6 35.4 3 34.5 3ZM3.75 7.5H3V6H4.65L3.75 7.5ZM13.5 21H22.5H24V22.5H12V21H13.5ZM12 25.5H24V31.5H12V25.5ZM21 18H15V13.5H21V18ZM33 7.5H32.25L31.2 6H33V7.5Z" /></g><defs><clipPath id="clip0_388_832"><rect width="36" height="36" /></clipPath></defs></svg>
     </div>
     <svg class="ds2s-left-edge" viewBox="0 0 62.840398 188.9734"><g transform="translate(-116.16967,-47.143751)"><path d="m 169.57601,236.1245 c -9.47632,0 -28.61796,0 -38.14134,0 -9.52337,0 -10.98683,-0.003 -11.12671,-0.0362 -0.13987,-0.0332 -0.4193,-0.0995 -0.66558,-0.18716 -0.24628,-0.0877 -0.4594,-0.19659 -0.69621,-0.34344 -0.2368,-0.14685 -0.49727,-0.33155 -0.74115,-0.57314 -0.24387,-0.24158 -0.4712,-0.53996 -0.67484,-0.84072 -0.20363,-0.30075 -0.38361,-0.60386 -0.53515,-0.88093 -0.15154,-0.27706 -0.27468,-0.52807 -0.34564,-0.89984 -0.071,-0.37177 -0.0899,-0.86432 -0.0994,-1.32846 -0.009,-0.46414 -0.009,-0.89985 0.0332,-1.29528 0.0426,-0.39544 0.12789,-0.75064 0.30787,-1.32133 0.17998,-0.57069 0.45467,-1.35688 9.81818,-31.07902 9.3635,-29.72215 27.81508,-88.3779 37.06769,-117.792791 9.25261,-29.414891 9.3059,-29.587766 9.39587,-29.755834 0.09,-0.168068 0.21667,-0.33146 0.32145,-0.468809 0.10479,-0.137349 0.18768,-0.248651 0.26935,-0.346894 0.0817,-0.09824 0.16221,-0.183521 0.24676,-0.270953 0.0846,-0.08743 0.17318,-0.177099 0.32521,-0.310711 0.15204,-0.133612 0.36753,-0.311214 0.641,-0.478151 0.27347,-0.166936 0.60499,-0.323224 0.89508,-0.453467 0.29008,-0.130244 0.53872,-0.234431 0.91291,-0.286875 0.3742,-0.05244 0.87403,-0.05308 1.27831,-0.05381 0.40428,-7.34e-4 0.71154,-0.0016 1.01939,-0.0024 0,0 -0.0299,189.005965 -0.0299,189.005965 -1e-5,0 -2e-5,0 -2e-5,0 0,0 -3e-5,2.4e-4 -9.47636,2.4e-4 z" id="path403" /></g></svg>
@@ -533,12 +515,12 @@
         <div class="ds2s-text">
             <h4>Did you know??</h4>
             <p>Over the course of 5 million miles, a fleet with properly aligned wheels will save approximately $60,000 in fuel and 18 million miles of tire life.</p>
-            <button class="ds2c-button ds2m-light" id='showHide-26' >button</button>
+            <button class="ds2c-button ds2m-light" id='showHide-24' >button</button>
         </div>
     </div>
     <svg class="ds2s-right-edge" viewBox="0 0 62.840398 188.9734"><g id="layer1" transform="translate(-116.16967,-47.143751)"><path d="m 125.55838,47.109129 c 9.47633,0 28.61797,0 38.38539,4.67e-4 9.76742,4.67e-4 10.25523,0.0014 10.63888,0.03506 0.38366,0.03366 0.66309,0.09996 0.90937,0.187625 0.24628,0.08766 0.4594,0.196592 0.6962,0.34344 0.2368,0.146848 0.49729,0.331553 0.74116,0.573138 0.24387,0.241585 0.4712,0.539957 0.67484,0.840714 0.20363,0.300757 0.3836,0.603863 0.53515,0.880931 0.15154,0.277068 0.27468,0.528074 0.34564,0.899844 0.071,0.37177 0.0899,0.86432 0.0994,1.328459 0.009,0.464139 0.009,0.899852 -0.0332,1.295287 -0.0426,0.395435 -0.12789,0.750634 -0.30787,1.321326 -0.17998,0.570692 -0.45467,1.356875 -9.81818,31.079024 -9.3635,29.72215 -27.81508,88.3779 -37.06769,117.79279 -9.25261,29.4149 -9.3059,29.58777 -9.39587,29.75584 -0.09,0.16807 -0.21667,0.33146 -0.32145,0.46881 -0.10479,0.13735 -0.18768,0.24865 -0.26935,0.34689 -0.0817,0.0983 -0.16221,0.18352 -0.24676,0.27096 -0.0845,0.0874 -0.17318,0.17709 -0.32521,0.31071 -0.15204,0.13361 -0.36753,0.31121 -0.641,0.47815 -0.27347,0.16693 -0.60499,0.32322 -0.89508,0.45347 -0.29008,0.13024 -0.53872,0.23443 -0.91194,0.28882 -0.37322,0.0544 -0.8711,0.0589 -1.27495,0.0611 -0.40386,0.002 -0.71392,0.002 -1.02372,0.002 0,0 0.0299,-189.014744 0.0299,-189.014744 1e-5,1e-6 2e-5,2e-6 2e-5,2e-6 0,0 3e-5,-6.9e-5 9.47635,-6.9e-5 z" id="path403" /></g></svg>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-callout"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-25'>&#60;div class="ds2s-icon-box"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-23'>&#60;div class="ds2s-icon-box"&#62;
         &#60;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36"&#62;&#60;g clip-path="url(#clip0_388_832)"&#62;&#60;path d="M34.5 3H28.5H19.5V0H16.5V3H7.5H1.5C0.6 3 0 3.6 0 4.5V9C0 9.9 0.6 10.5 1.5 10.5H4.5C4.95 10.5 5.4 10.2 5.7 9.9L8.25 6H16.5V10.5H13.5C12.6 10.5 12 11.1 12 12V18H10.5C9.6 18 9 18.6 9 19.5V33C9 33.9 9.6 34.5 10.5 34.5V36H13.5V34.5H22.5V36H25.5V34.5C26.4 34.5 27 33.9 27 33V19.5C27 18.6 26.4 18 25.5 18H24V12C24 11.1 23.4 10.5 22.5 10.5H19.5V6H27.75L30.3 9.9C30.6 10.2 31.05 10.5 31.5 10.5H34.5C35.4 10.5 36 9.9 36 9V4.5C36 3.6 35.4 3 34.5 3ZM3.75 7.5H3V6H4.65L3.75 7.5ZM13.5 21H22.5H24V22.5H12V21H13.5ZM12 25.5H24V31.5H12V25.5ZM21 18H15V13.5H21V18ZM33 7.5H32.25L31.2 6H33V7.5Z" /&#62;&#60;/g&#62;&#60;defs&#62;&#60;clipPath id="clip0_388_832"&#62;&#60;rect width="36" height="36" /&#62;&#60;/clipPath&#62;&#60;/defs&#62;&#60;/svg&#62;
     &#60;/div&#62;</span>
     &#60;svg class="ds2s-left-edge" viewBox="0 0 62.840398 188.9734"&#62;&#60;g transform="translate(-116.16967,-47.143751)"&#62;&#60;path d="m 169.57601,236.1245 c -9.47632,0 -28.61796,0 -38.14134,0 -9.52337,0 -10.98683,-0.003 -11.12671,-0.0362 -0.13987,-0.0332 -0.4193,-0.0995 -0.66558,-0.18716 -0.24628,-0.0877 -0.4594,-0.19659 -0.69621,-0.34344 -0.2368,-0.14685 -0.49727,-0.33155 -0.74115,-0.57314 -0.24387,-0.24158 -0.4712,-0.53996 -0.67484,-0.84072 -0.20363,-0.30075 -0.38361,-0.60386 -0.53515,-0.88093 -0.15154,-0.27706 -0.27468,-0.52807 -0.34564,-0.89984 -0.071,-0.37177 -0.0899,-0.86432 -0.0994,-1.32846 -0.009,-0.46414 -0.009,-0.89985 0.0332,-1.29528 0.0426,-0.39544 0.12789,-0.75064 0.30787,-1.32133 0.17998,-0.57069 0.45467,-1.35688 9.81818,-31.07902 9.3635,-29.72215 27.81508,-88.3779 37.06769,-117.792791 9.25261,-29.414891 9.3059,-29.587766 9.39587,-29.755834 0.09,-0.168068 0.21667,-0.33146 0.32145,-0.468809 0.10479,-0.137349 0.18768,-0.248651 0.26935,-0.346894 0.0817,-0.09824 0.16221,-0.183521 0.24676,-0.270953 0.0846,-0.08743 0.17318,-0.177099 0.32521,-0.310711 0.15204,-0.133612 0.36753,-0.311214 0.641,-0.478151 0.27347,-0.166936 0.60499,-0.323224 0.89508,-0.453467 0.29008,-0.130244 0.53872,-0.234431 0.91291,-0.286875 0.3742,-0.05244 0.87403,-0.05308 1.27831,-0.05381 0.40428,-7.34e-4 0.71154,-0.0016 1.01939,-0.0024 0,0 -0.0299,189.005965 -0.0299,189.005965 -1e-5,0 -2e-5,0 -2e-5,0 0,0 -3e-5,2.4e-4 -9.47636,2.4e-4 z" id="path403" /&#62;&#60;/g&#62;&#60;/svg&#62;
@@ -546,67 +528,67 @@
         &#60;div class="ds2s-text"&#62;
             &#60;h4&#62;<span class='authorable-code'>Did you know??</span>&#60;/h4&#62;
             &#60;p&#62;<span class='authorable-code'>Over the course of 5 million miles, a fleet with properly aligned wheels will save approximately $60,000 in fuel and 18 million miles of tire life.</span>&#60;/p&#62;
-            <span class='showHideBtn' showHideTarget='showHide-26'>&#60;button class="ds2c-button ds2m-light"&#62;<span class='authorable-code'>button</span>&#60;/button&#62;</span>
+            <span class='showHideBtn' showHideTarget='showHide-24'>&#60;button class="ds2c-button ds2m-light"&#62;<span class='authorable-code'>button</span>&#60;/button&#62;</span>
         &#60;/div&#62;
     &#60;/div&#62;
     &#60;svg class="ds2s-right-edge" viewBox="0 0 62.840398 188.9734"&#62;&#60;g id="layer1" transform="translate(-116.16967,-47.143751)"&#62;&#60;path d="m 125.55838,47.109129 c 9.47633,0 28.61797,0 38.38539,4.67e-4 9.76742,4.67e-4 10.25523,0.0014 10.63888,0.03506 0.38366,0.03366 0.66309,0.09996 0.90937,0.187625 0.24628,0.08766 0.4594,0.196592 0.6962,0.34344 0.2368,0.146848 0.49729,0.331553 0.74116,0.573138 0.24387,0.241585 0.4712,0.539957 0.67484,0.840714 0.20363,0.300757 0.3836,0.603863 0.53515,0.880931 0.15154,0.277068 0.27468,0.528074 0.34564,0.899844 0.071,0.37177 0.0899,0.86432 0.0994,1.328459 0.009,0.464139 0.009,0.899852 -0.0332,1.295287 -0.0426,0.395435 -0.12789,0.750634 -0.30787,1.321326 -0.17998,0.570692 -0.45467,1.356875 -9.81818,31.079024 -9.3635,29.72215 -27.81508,88.3779 -37.06769,117.79279 -9.25261,29.4149 -9.3059,29.58777 -9.39587,29.75584 -0.09,0.16807 -0.21667,0.33146 -0.32145,0.46881 -0.10479,0.13735 -0.18768,0.24865 -0.26935,0.34689 -0.0817,0.0983 -0.16221,0.18352 -0.24676,0.27096 -0.0845,0.0874 -0.17318,0.17709 -0.32521,0.31071 -0.15204,0.13361 -0.36753,0.31121 -0.641,0.47815 -0.27347,0.16693 -0.60499,0.32322 -0.89508,0.45347 -0.29008,0.13024 -0.53872,0.23443 -0.91194,0.28882 -0.37322,0.0544 -0.8711,0.0589 -1.27495,0.0611 -0.40386,0.002 -0.71392,0.002 -1.02372,0.002 0,0 0.0299,-189.014744 0.0299,-189.014744 1e-5,1e-6 2e-5,2e-6 2e-5,2e-6 0,0 3e-5,-6.9e-5 9.47635,-6.9e-5 z" id="path403" /&#62;&#60;/g&#62;&#60;/svg&#62;
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-card' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option><option value='ds2m-bg-image-primary'>ds2m-bg-image-primary</option><option value='ds2m-bg-image-dark'>ds2m-bg-image-dark</option></select></div></div><div class='component-view-box'><div class="ds2c-card">
-    <img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA=="  id='showHide-27' />
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-card' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option><option value='ds2m-bg-image-primary'>ds2m-bg-image-primary</option><option value='ds2m-bg-image-dark'>ds2m-bg-image-dark</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-card">
+    <img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA=="  id='showHide-25' />
     <div class="ds2s-titlesection">
-        <div class="ds2s-title-icon" id='showHide-28' >
+        <div class="ds2s-title-icon" id='showHide-26' >
             <svg viewBox="0 0 24 24"> <ellipse style="fill:#c00c00;stroke-width:18.8976;stroke-linecap:round;fill-opacity:1" id="path322" cx="11.972603" cy="11.972603" rx="11.917809" ry="11.972603" /><g clip-path="url(#clip0_42_2063)" id="g147" transform="matrix(0.59360731,0,0,0.59360731,4.8767123,4.8767123)" style="fill:#ffffff;fill-opacity:1"><path d="M 23,2 H 19 13 V 0 H 11 V 2 H 5 1 C 0.4,2 0,2.4 0,3 V 6 C 0,6.6 0.4,7 1,7 H 3 C 3.3,7 3.6,6.8 3.8,6.6 L 5.5,4 H 11 V 7 H 9 C 8.4,7 8,7.4 8,8 v 4 H 7 c -0.6,0 -1,0.4 -1,1 v 9 c 0,0.6 0.4,1 1,1 v 1 h 2 v -1 h 6 v 1 h 2 v -1 c 0.6,0 1,-0.4 1,-1 v -9 c 0,-0.6 -0.4,-1 -1,-1 H 16 V 8 C 16,7.4 15.6,7 15,7 H 13 V 4 h 5.5 l 1.7,2.6 C 20.4,6.8 20.7,7 21,7 h 2 c 0.6,0 1,-0.4 1,-1 V 3 C 24,2.4 23.6,2 23,2 Z M 2.5,5 H 2 V 4 H 3.1 Z M 9,14 h 6 1 v 1 H 8 v -1 z m -1,3 h 8 v 4 H 8 Z m 6,-5 H 10 V 9 h 4 z M 22,5 H 21.5 L 20.8,4 H 22 Z" fill="#1f2533" id="path145" style="fill:#ffffff;fill-opacity:1" /></g></svg>
         </div>
         <div class="ds2s-title-text">
-            <span id='showHide-29' >label</span>
+            <span id='showHide-27' >label</span>
             <h4>Card Title</h4>
-            <h5 id='showHide-30' >Sub Title</h5>
+            <h5 id='showHide-28' >Sub Title</h5>
         </div>
     </div>
-    <div class="ds2s-body-text" id='showHide-31' >
+    <div class="ds2s-body-text" id='showHide-29' >
         Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment. <a href="#">read more</a>
     </div>
     <div class="ds2s-flex-spacer"></div>
-    <div class="ds2s-tag-section" id='showHide-32' >
+    <div class="ds2s-tag-section" id='showHide-30' >
         <a>tag name</a>
         <a>another tag</a>
         <a>third tag</a>
     </div>
-    <div class="ds2s-button-section" id='showHide-33' >
+    <div class="ds2s-button-section" id='showHide-31' >
         <a class="ds2c-button ds2m-small">Button</a>
         <a class="ds2c-button ds2m-small">Button</a>
     </div>
-    <div class="ds2s-link-section" id='showHide-34' >
+    <div class="ds2s-link-section" id='showHide-32' >
         <a href="#">go to link</a>
     </div>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-card"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-27'>&#60;img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA==" /&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-25'>&#60;img src="https://globalassets.hunter.com/images/assets/Ultimate+ADAS_49185.png/Zz00M2IzZDg5Yzc3NjMxMWVlYTRiNWQ2OWQzOGJkYzE0OA==" /&#62;</span>
     &#60;div class="ds2s-titlesection"&#62;
-        <span class='showHideBtn' showHideTarget='showHide-28'>&#60;div class="ds2s-title-icon"&#62;
+        <span class='showHideBtn' showHideTarget='showHide-26'>&#60;div class="ds2s-title-icon"&#62;
             <span class='authorable-code'>&#60;svg viewBox="0 0 24 24"&#62; &#60;ellipse style="fill:#c00c00;stroke-width:18.8976;stroke-linecap:round;fill-opacity:1" id="path322" cx="11.972603" cy="11.972603" rx="11.917809" ry="11.972603" /&#62;&#60;g clip-path="url(#clip0_42_2063)" id="g147" transform="matrix(0.59360731,0,0,0.59360731,4.8767123,4.8767123)" style="fill:#ffffff;fill-opacity:1"&#62;&#60;path d="M 23,2 H 19 13 V 0 H 11 V 2 H 5 1 C 0.4,2 0,2.4 0,3 V 6 C 0,6.6 0.4,7 1,7 H 3 C 3.3,7 3.6,6.8 3.8,6.6 L 5.5,4 H 11 V 7 H 9 C 8.4,7 8,7.4 8,8 v 4 H 7 c -0.6,0 -1,0.4 -1,1 v 9 c 0,0.6 0.4,1 1,1 v 1 h 2 v -1 h 6 v 1 h 2 v -1 c 0.6,0 1,-0.4 1,-1 v -9 c 0,-0.6 -0.4,-1 -1,-1 H 16 V 8 C 16,7.4 15.6,7 15,7 H 13 V 4 h 5.5 l 1.7,2.6 C 20.4,6.8 20.7,7 21,7 h 2 c 0.6,0 1,-0.4 1,-1 V 3 C 24,2.4 23.6,2 23,2 Z M 2.5,5 H 2 V 4 H 3.1 Z M 9,14 h 6 1 v 1 H 8 v -1 z m -1,3 h 8 v 4 H 8 Z m 6,-5 H 10 V 9 h 4 z M 22,5 H 21.5 L 20.8,4 H 22 Z" fill="#1f2533" id="path145" style="fill:#ffffff;fill-opacity:1" /&#62;&#60;/g&#62;&#60;/svg&#62;</span>
         &#60;/div&#62;</span>
         &#60;div class="ds2s-title-text"&#62;
-            <span class='showHideBtn' showHideTarget='showHide-29'>&#60;span&#62;<span class='authorable-code'>label</span>&#60;/span&#62;</span>
+            <span class='showHideBtn' showHideTarget='showHide-27'>&#60;span&#62;<span class='authorable-code'>label</span>&#60;/span&#62;</span>
             &#60;h4&#62;<span class='authorable-code'>Card Title</span>&#60;/h4&#62;
-            <span class='showHideBtn' showHideTarget='showHide-30'>&#60;h5&#62;<span class='authorable-code'>Sub Title</span>&#60;/h5&#62;</span>
+            <span class='showHideBtn' showHideTarget='showHide-28'>&#60;h5&#62;<span class='authorable-code'>Sub Title</span>&#60;/h5&#62;</span>
         &#60;/div&#62;
     &#60;/div&#62;
-    <span class='showHideBtn' showHideTarget='showHide-31'>&#60;div class="ds2s-body-text"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-29'>&#60;div class="ds2s-body-text"&#62;
         <span class='authorable-code'>Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment. &#60;a href="#"&#62;read more&#60;/a&#62;</span>
     &#60;/div&#62;</span>
     &#60;div class="ds2s-flex-spacer"&#62;&#60;/div&#62;
-    <span class='showHideBtn' showHideTarget='showHide-32'>&#60;div class="ds2s-tag-section"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-30'>&#60;div class="ds2s-tag-section"&#62;
         &#60;a&#62;<span class='authorable-code'>tag name</span>&#60;/a&#62;
         &#60;a&#62;<span class='authorable-code'>another tag</span>&#60;/a&#62;
         &#60;a&#62;<span class='authorable-code'>third tag</span>&#60;/a&#62;
     &#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-33'>&#60;div class="ds2s-button-section"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-31'>&#60;div class="ds2s-button-section"&#62;
         &#60;a class="ds2c-button ds2m-small"&#62;<span class='authorable-code'>Button</span>&#60;/a&#62;
         &#60;a class="ds2c-button ds2m-small"&#62;<span class='authorable-code'>Button</span>&#60;/a&#62;
     &#60;/div&#62;</span>
-    <span class='showHideBtn' showHideTarget='showHide-34'>&#60;div class="ds2s-link-section"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-32'>&#60;div class="ds2s-link-section"&#62;
         &#60;a href="<span class='authorable-code'>#</span>"&#62;<span class='authorable-code'>go to link</span>&#60;/a&#62;
     &#60;/div&#62;</span>
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-carousel' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>video card color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option></select></div></div><div class='component-view-box'><div class="ds2c-carousel">
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-carousel' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>video card color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-carousel">
     <div class="ds2s-main">
         <div class="ds2s-left-control"> </div>
         <div class="ds2s-items">
@@ -848,8 +830,80 @@
             &#60;/div&#62;
         &#60;/div&#62;
     &#60;/div&#62;
-&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-select' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>validation state</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-valid'>ds2m-valid</option><option value='ds2m-error'>ds2m-error</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>disabled?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-disabled'>ds2m-disabled</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>loading?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-loading'>ds2m-loading</option></select></div></div><div class='component-view-box'><div class="ds2c-select">
-    <div class="ds2s-icon-container" id='showHide-35' >
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-full-width-panel' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>color</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-dark'>ds2m-dark</option><option value='ds2m-neutral'>ds2m-neutral</option><option value='ds2m-transparent'>ds2m-transparent</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>background gradient</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-background-gradient'>ds2m-background-gradient</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>horizontal flow direction</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-horizontal-reverse'>ds2m-horizontal-reverse</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-full-width-panel">
+    <div class="ds2s-full-width-panel-wrapped">
+        <img class="ds2s-background-image" src="https://globalassets.hunter.com/images/assets/liftrack-scissor-fia-inflation.png/Zz03ODY5OTQ5YTE1YWQxMWVlYTFmNGZhOWY5MDQ5YzcxOA=="  id='showHide-33' />
+          <div class="ds2s-content">
+              <div class="ds2s-image-section">
+                  <img src="https://globalassets.hunter.com/images/assets/liftrack-scissor-productshot-car-01.png/Zz1iZDhkOGU1NGQyZTcxMWVkOWYzOWVlZTk5ZTZkYTA0Yg==" />
+              </div>
+              <div class="ds2s-text-section">
+                  <div class="text-section-inner">
+                      <div class="ds2s-header">
+                          Take your service to new levels
+                      </div>
+                      <hr />
+                      <p class="ds2s-paragraph">
+                          Hunter's RX Scissor Alignment Lifts have the best-in-class drive-on and raise heights
+                      </p>
+                      <div class="ds2s-button-section">
+                          <button class="ds2c-button ds2m-light ds2m-small">Get a Quote</button>
+                          <button class="ds2c-button ds2m-secondary-light ds2m-small">Get a Quote</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+</div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-full-width-panel"&#62;
+    &#60;div class="ds2s-full-width-panel-wrapped"&#62;
+        <span class='showHideBtn' showHideTarget='showHide-33'>&#60;img class="ds2s-background-image" src="https://globalassets.hunter.com/images/assets/liftrack-scissor-fia-inflation.png/Zz03ODY5OTQ5YTE1YWQxMWVlYTFmNGZhOWY5MDQ5YzcxOA==" /&#62;</span>
+          &#60;div class="ds2s-content"&#62;
+              &#60;div class="ds2s-image-section"&#62;
+                  &#60;img src="https://globalassets.hunter.com/images/assets/liftrack-scissor-productshot-car-01.png/Zz1iZDhkOGU1NGQyZTcxMWVkOWYzOWVlZTk5ZTZkYTA0Yg==" /&#62;
+              &#60;/div&#62;
+              &#60;div class="ds2s-text-section"&#62;
+                  &#60;div class="text-section-inner"&#62;
+                      &#60;div class="ds2s-header"&#62;
+                          Take your service to new levels
+                      &#60;/div&#62;
+                      &#60;hr /&#62;
+                      &#60;p class="ds2s-paragraph"&#62;
+                          Hunter's RX Scissor Alignment Lifts have the best-in-class drive-on and raise heights
+                      &#60;/p&#62;
+                      &#60;div class="ds2s-button-section"&#62;
+                          &#60;button class="ds2c-button ds2m-light ds2m-small"&#62;Get a Quote&#60;/button&#62;
+                          &#60;button class="ds2c-button ds2m-secondary-light ds2m-small"&#62;Get a Quote&#60;/button&#62;
+                      &#60;/div&#62;
+                  &#60;/div&#62;
+              &#60;/div&#62;
+          &#60;/div&#62;
+    &#60;/div&#62;
+&#60;/div&#62;</pre></div></div></div><div id='componentDemoBox-input' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>validation state</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-valid'>ds2m-valid</option><option value='ds2m-error'>ds2m-error</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>disabled?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-disabled'>ds2m-disabled</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-input">
+	<div class="ds2s-icon-container" id='showHide-34' >
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+			<path d="M20.3 13.9C19.42 13.78 18.54 13.57 17.71 13.25C16.62 12.84 15.38 13.1 14.54 13.93L13.82 14.65C11.98 13.47 10.41 11.91 9.23004 10.06L9.95004 9.34C10.77 8.51 11.04 7.27 10.63 6.18C10.32 5.35 10.1 4.47 9.98004 3.58C9.78004 2.1 8.50004 1 7.03004 1C7.02004 1 7.01004 1 7.00004 1H4.00004C3.91004 1 3.82004 1 3.73004 1.01C2.93004 1.08 2.21004 1.46 1.70004 2.08C1.19004 2.7 0.940044 3.47 1.02004 4.29C1.36004 7.52 2.48004 10.67 4.24004 13.39C5.84004 15.91 8.02004 18.09 10.54 19.69C13.25 21.45 16.39 22.57 19.62 22.92C19.71 22.93 19.81 22.93 19.91 22.93C21.56 22.92 22.9 21.57 22.9 19.92V16.93C22.92 15.41 21.81 14.11 20.3 13.9ZM20.89 19.92C20.89 20.47 20.45 20.92 19.82 20.92C16.91 20.6 14.08 19.6 11.62 18C9.34004 16.55 7.37004 14.58 5.92004 12.3C4.32004 9.84 3.31004 7 3.00004 4.09C2.95004 3.54 3.36004 3.05 4.00004 3H7.01004H7.02004C7.52004 3 7.94004 3.37 8.01004 3.85C8.14004 4.88 8.40004 5.9 8.76004 6.88C8.90004 7.25 8.81004 7.66 8.54004 7.93L6.73004 9.74L7.11004 10.4C8.62004 13.06 10.83 15.26 13.49 16.78L14.15 17.16L15.96 15.35C16.24 15.08 16.65 14.99 17.02 15.13C18 15.49 19.02 15.75 20.04 15.88C20.54 15.95 20.91 16.39 20.9 16.9L20.89 19.92Z"/>
+		</svg>
+	</div>
+	<input placeholder="weight">
+	<span id='showHide-35' >(kg)</span>
+	<div class="ds2s-tooltips">
+		<div class="ds2s-tooltip-text">this is where you enter some data... should be obvious</div>
+		<div class="ds2s-tooltip-error">that was so invalid of you</div>
+	</div>
+</div>	</div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-input"&#62;
+	<span class='showHideBtn' showHideTarget='showHide-34'>&#60;div class="ds2s-icon-container"&#62;
+		<span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" &#62;
+			&#60;path d="M20.3 13.9C19.42 13.78 18.54 13.57 17.71 13.25C16.62 12.84 15.38 13.1 14.54 13.93L13.82 14.65C11.98 13.47 10.41 11.91 9.23004 10.06L9.95004 9.34C10.77 8.51 11.04 7.27 10.63 6.18C10.32 5.35 10.1 4.47 9.98004 3.58C9.78004 2.1 8.50004 1 7.03004 1C7.02004 1 7.01004 1 7.00004 1H4.00004C3.91004 1 3.82004 1 3.73004 1.01C2.93004 1.08 2.21004 1.46 1.70004 2.08C1.19004 2.7 0.940044 3.47 1.02004 4.29C1.36004 7.52 2.48004 10.67 4.24004 13.39C5.84004 15.91 8.02004 18.09 10.54 19.69C13.25 21.45 16.39 22.57 19.62 22.92C19.71 22.93 19.81 22.93 19.91 22.93C21.56 22.92 22.9 21.57 22.9 19.92V16.93C22.92 15.41 21.81 14.11 20.3 13.9ZM20.89 19.92C20.89 20.47 20.45 20.92 19.82 20.92C16.91 20.6 14.08 19.6 11.62 18C9.34004 16.55 7.37004 14.58 5.92004 12.3C4.32004 9.84 3.31004 7 3.00004 4.09C2.95004 3.54 3.36004 3.05 4.00004 3H7.01004H7.02004C7.52004 3 7.94004 3.37 8.01004 3.85C8.14004 4.88 8.40004 5.9 8.76004 6.88C8.90004 7.25 8.81004 7.66 8.54004 7.93L6.73004 9.74L7.11004 10.4C8.62004 13.06 10.83 15.26 13.49 16.78L14.15 17.16L15.96 15.35C16.24 15.08 16.65 14.99 17.02 15.13C18 15.49 19.02 15.75 20.04 15.88C20.54 15.95 20.91 16.39 20.9 16.9L20.89 19.92Z"/&#62;
+		&#60;/svg&#62;</span>
+	&#60;/div&#62;</span>
+	&#60;input placeholder="<span class='authorable-code'>weight</span>"&#62;
+	<span class='showHideBtn' showHideTarget='showHide-35'>&#60;span&#62;<span class='authorable-code'>(kg)</span>&#60;/span&#62;</span>
+	&#60;div class="ds2s-tooltips"&#62;
+		&#60;div class="ds2s-tooltip-text"&#62;<span class='authorable-code'>this is where you enter some data... should be obvious</span>&#60;/div&#62;
+		&#60;div class="ds2s-tooltip-error"&#62;<span class='authorable-code'>that was so invalid of you</span>&#60;/div&#62;
+	&#60;/div&#62;
+&#60;/div&#62;	</pre></div></div></div><div id='componentDemoBox-select' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>validation state</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-valid'>ds2m-valid</option><option value='ds2m-error'>ds2m-error</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>disabled?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-disabled'>ds2m-disabled</option></select></div><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>loading?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-loading'>ds2m-loading</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-select">
+    <div class="ds2s-icon-container" id='showHide-36' >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
 			<path d="M20.3 13.9C19.42 13.78 18.54 13.57 17.71 13.25C16.62 12.84 15.38 13.1 14.54 13.93L13.82 14.65C11.98 13.47 10.41 11.91 9.23004 10.06L9.95004 9.34C10.77 8.51 11.04 7.27 10.63 6.18C10.32 5.35 10.1 4.47 9.98004 3.58C9.78004 2.1 8.50004 1 7.03004 1C7.02004 1 7.01004 1 7.00004 1H4.00004C3.91004 1 3.82004 1 3.73004 1.01C2.93004 1.08 2.21004 1.46 1.70004 2.08C1.19004 2.7 0.940044 3.47 1.02004 4.29C1.36004 7.52 2.48004 10.67 4.24004 13.39C5.84004 15.91 8.02004 18.09 10.54 19.69C13.25 21.45 16.39 22.57 19.62 22.92C19.71 22.93 19.81 22.93 19.91 22.93C21.56 22.92 22.9 21.57 22.9 19.92V16.93C22.92 15.41 21.81 14.11 20.3 13.9ZM20.89 19.92C20.89 20.47 20.45 20.92 19.82 20.92C16.91 20.6 14.08 19.6 11.62 18C9.34004 16.55 7.37004 14.58 5.92004 12.3C4.32004 9.84 3.31004 7 3.00004 4.09C2.95004 3.54 3.36004 3.05 4.00004 3H7.01004H7.02004C7.52004 3 7.94004 3.37 8.01004 3.85C8.14004 4.88 8.40004 5.9 8.76004 6.88C8.90004 7.25 8.81004 7.66 8.54004 7.93L6.73004 9.74L7.11004 10.4C8.62004 13.06 10.83 15.26 13.49 16.78L14.15 17.16L15.96 15.35C16.24 15.08 16.65 14.99 17.02 15.13C18 15.49 19.02 15.75 20.04 15.88C20.54 15.95 20.91 16.39 20.9 16.9L20.89 19.92Z"/>
 		</svg>
@@ -860,12 +914,12 @@
         <option value="mercedes">Mercedes</option>
         <option value="audi">Audi</option>
     </select>
-    <div class="ds2s-tooltips" id='showHide-36' >
+    <div class="ds2s-tooltips" id='showHide-37' >
         <div class="ds2s-tooltip-text">this is where you enter some data... should be obvious</div>
         <div class="ds2s-tooltip-error">that was so invalid of you</div>
     </div>
 </div>	</div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-select"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-35'>&#60;div class="ds2s-icon-container"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-36'>&#60;div class="ds2s-icon-container"&#62;
         <span class='authorable-code'>&#60;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" &#62;
 			&#60;path d="M20.3 13.9C19.42 13.78 18.54 13.57 17.71 13.25C16.62 12.84 15.38 13.1 14.54 13.93L13.82 14.65C11.98 13.47 10.41 11.91 9.23004 10.06L9.95004 9.34C10.77 8.51 11.04 7.27 10.63 6.18C10.32 5.35 10.1 4.47 9.98004 3.58C9.78004 2.1 8.50004 1 7.03004 1C7.02004 1 7.01004 1 7.00004 1H4.00004C3.91004 1 3.82004 1 3.73004 1.01C2.93004 1.08 2.21004 1.46 1.70004 2.08C1.19004 2.7 0.940044 3.47 1.02004 4.29C1.36004 7.52 2.48004 10.67 4.24004 13.39C5.84004 15.91 8.02004 18.09 10.54 19.69C13.25 21.45 16.39 22.57 19.62 22.92C19.71 22.93 19.81 22.93 19.91 22.93C21.56 22.92 22.9 21.57 22.9 19.92V16.93C22.92 15.41 21.81 14.11 20.3 13.9ZM20.89 19.92C20.89 20.47 20.45 20.92 19.82 20.92C16.91 20.6 14.08 19.6 11.62 18C9.34004 16.55 7.37004 14.58 5.92004 12.3C4.32004 9.84 3.31004 7 3.00004 4.09C2.95004 3.54 3.36004 3.05 4.00004 3H7.01004H7.02004C7.52004 3 7.94004 3.37 8.01004 3.85C8.14004 4.88 8.40004 5.9 8.76004 6.88C8.90004 7.25 8.81004 7.66 8.54004 7.93L6.73004 9.74L7.11004 10.4C8.62004 13.06 10.83 15.26 13.49 16.78L14.15 17.16L15.96 15.35C16.24 15.08 16.65 14.99 17.02 15.13C18 15.49 19.02 15.75 20.04 15.88C20.54 15.95 20.91 16.39 20.9 16.9L20.89 19.92Z"/&#62;
 		&#60;/svg&#62;</span>
@@ -876,41 +930,41 @@
         &#60;option value="mercedes"&#62;Mercedes&#60;/option&#62;
         &#60;option value="audi"&#62;Audi&#60;/option&#62;
     &#60;/select&#62;
-    <span class='showHideBtn' showHideTarget='showHide-36'>&#60;div class="ds2s-tooltips"&#62;
+    <span class='showHideBtn' showHideTarget='showHide-37'>&#60;div class="ds2s-tooltips"&#62;
         &#60;div class="ds2s-tooltip-text"&#62;<span class='authorable-code'>this is where you enter some data... should be obvious</span>&#60;/div&#62;
         &#60;div class="ds2s-tooltip-error"&#62;<span class='authorable-code'>that was so invalid of you</span>&#60;/div&#62;
     &#60;/div&#62;</span>
-&#60;/div&#62;	</pre></div></div></div><div id='componentDemoBox-slider-card' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>expanding?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-expanded'>ds2m-expanded</option></select></div></div><div class='component-view-box'><div class="ds2c-slider-card">
-    <img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA=="  id='showHide-37' />
+&#60;/div&#62;	</pre></div></div></div><div id='componentDemoBox-slider-card' class='component-demo-box' style='display:none'><div class='component-controls-box'><h3 class='ds2u-font-heading-h3 section-header'>Component Modifiers</h3><div class='control-section'><h4 class='control-label ds2u-font-heading-h5'>expanding?</h4><select class="ds2c-select"><option value=''>[none]</option><option value='ds2m-expanded'>ds2m-expanded</option></select></div></div><div class='component-view-box component-view-box-padded'><div class="ds2c-slider-card">
+    <img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA=="  id='showHide-38' />
       <div class="ds2s-content-wrapper">
           <div class="ds2s-titlesection">
               <h4>Card Title</h4>
           </div>
-          <div class="ds2s-body-text" id='showHide-38' >
+          <div class="ds2s-body-text" id='showHide-39' >
               Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment.
           </div>
           <div class="ds2s-flex-spacer"></div>
-          <div class="ds2s-button-section" id='showHide-39' >
+          <div class="ds2s-button-section" id='showHide-40' >
               <a class="ds2c-button ds2m-small">Button</a>
           </div>
-          <div class="ds2s-link-section" id='showHide-40' >
+          <div class="ds2s-link-section" id='showHide-41' >
               <a href="#">go to link</a>
           </div>
       </div>
 </div></div><div class='html-view-box'><h3 class='ds2u-font-heading-h3'>Component Markup</h3><div class='html-view-bg'><pre>&#60;div class="ds2c-slider-card"&#62;
-    <span class='showHideBtn' showHideTarget='showHide-37'>&#60;img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA==" /&#62;</span>
+    <span class='showHideBtn' showHideTarget='showHide-38'>&#60;img src="https://globalassets.hunter.com/images/assets/tire-revolution-productshot1.png/Zz1jZGEzMGQ2NDc2ZmQxMWVkYThhZjA2NjAxNGNjZTdhOA==" /&#62;</span>
       &#60;div class="ds2s-content-wrapper"&#62;
           &#60;div class="ds2s-titlesection"&#62;
               &#60;h4&#62;<span class='authorable-code'>Card Title</span>&#60;/h4&#62;
           &#60;/div&#62;
-          <span class='showHideBtn' showHideTarget='showHide-38'>&#60;div class="ds2s-body-text"&#62;
+          <span class='showHideBtn' showHideTarget='showHide-39'>&#60;div class="ds2s-body-text"&#62;
               <span class='authorable-code'>Hunter Engineering Company is the global leader in alignment systems, wheel and tire service, brake service and inspection lane equipment.</span>
           &#60;/div&#62;</span>
           &#60;div class="ds2s-flex-spacer"&#62;&#60;/div&#62;
-          <span class='showHideBtn' showHideTarget='showHide-39'>&#60;div class="ds2s-button-section"&#62;
+          <span class='showHideBtn' showHideTarget='showHide-40'>&#60;div class="ds2s-button-section"&#62;
               &#60;a class="ds2c-button ds2m-small"&#62;<span class='authorable-code'>Button</span>&#60;/a&#62;
           &#60;/div&#62;</span>
-          <span class='showHideBtn' showHideTarget='showHide-40'>&#60;div class="ds2s-link-section"&#62;
+          <span class='showHideBtn' showHideTarget='showHide-41'>&#60;div class="ds2s-link-section"&#62;
               &#60;a href="<span class='authorable-code'>#</span>"&#62;<span class='authorable-code'>go to link</span>&#60;/a&#62;
           &#60;/div&#62;</span>
       &#60;/div&#62;
